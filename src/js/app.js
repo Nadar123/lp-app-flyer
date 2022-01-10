@@ -13,21 +13,23 @@ dom.i2svg()
 
 
 jQuery(window).on('load', function($) {
-    // handleLoader();
-    // initFeather();
+
 
 });
-
-// Dashboard loder
-function handleLoader() {
-    jQuery(".preloader").fadeOut();
-}
-
-// feather init icons Dashboard
-function initFeather() {
-    feather.replace();
-}
-
+$(window).on('scroll',function(){
+    if($(window).scrollTop() >= 100 ){
+        $('.header').addClass('active');
+    }
+    else{
+        $('.header').removeClass('active');
+    }
+})
+  /*menu button onclick function*/        
+// $(document).ready(function(){
+//         $('.menu h4').click(function(){
+//             $("nav ul").toggleClass("active")
+//     })
+// })
 
 
 

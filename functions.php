@@ -30,6 +30,17 @@
   }
   add_filter('upload_mimes', 'cc_mine_types');
 
+  // option page ACF
+  if(function_exists('acf_add_options_page')) {
+    acf_add_options_page();
+  }
+
+
+  // function fivers_features() {
+  //   register_nav_menu('headerMenu', 'Header Menu');
+  //   add_theme_support('title-tag');
+  // }
+  // add_action('after_setup_theme', 'fivers_features');
   // add_action('wp_ajax_nopriv_get_post_data', 'get_post_data');
   // add_action('wp_ajax_get_post_data', 'get_post_data');
 

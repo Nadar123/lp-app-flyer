@@ -1,5 +1,8 @@
 
 <!doctype html>
+<?php 
+$logo_site = get_field('logo_site', 'option')
+?>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
@@ -26,15 +29,15 @@
 	</script>
 
 	<header class="header clear" role="banner">
-					<div class="main-nav-bar">
-			<div class="row row-bar">
+		<div class="main-nav-wrapper">
+			<div class="row-wrapper">
 				<div class="logo">
 					<a href="<?php echo home_url(); ?>" role="logo">
-					Logo <img src="" alt="">
+						<img src="<?php echo $logo_site['url']; ?>" alt="">
 					</a>
 				</div>
 
-				<div class="menu-wrap-bar desktop_only">
+				<div class="menu-wrapper desktop_only">
 					<nav class="nav" role="navigation">
 						<?php header_menu(); ?>
 					</nav>

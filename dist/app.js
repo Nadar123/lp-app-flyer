@@ -17033,18 +17033,20 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.library.add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__.fas, _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_2__.far, _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_3__.fab);
 _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.dom.i2svg();
-jQuery(window).on('load', function ($) {// handleLoader();
-  // initFeather();
-}); // Dashboard loder
-
-function handleLoader() {
-  jQuery(".preloader").fadeOut();
-} // feather init icons Dashboard
-
-
-function initFeather() {
-  feather.replace();
-}
+jQuery(window).on('load', function ($) {});
+$(window).on('scroll', function () {
+  if ($(window).scrollTop() >= 100) {
+    $('.header').addClass('active');
+  } else {
+    $('.header').removeClass('active');
+  }
+});
+/*menu button onclick function*/
+// $(document).ready(function(){
+//         $('.menu h4').click(function(){
+//             $("nav ul").toggleClass("active")
+//     })
+// })
 
 console.log('hello12344');
 

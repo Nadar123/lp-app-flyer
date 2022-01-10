@@ -1,0 +1,136 @@
+// TOP SECTION
+.page-wrapper {
+    width: 100%;
+    height: auto;
+
+    &__home {
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        padding: 140px 50px 50px;
+    }
+    &__content {
+        text-align: center;
+        padding: 4rem 0;
+
+        h1.title {
+            font-family:'Courier New', Courier, monospace;
+            color: #ffcd07;
+            font-size: 55px;
+            line-height: 65px;
+            font-weight: 600;
+        }
+        h2.subtitle {
+            color:#fff;
+            text-align: center;
+            font-size: 35px;
+            list-style: 45px;
+            font-weight: 400;
+            padding: 1rem 0;
+
+        }
+        h3.small-title {
+            color:#fff;
+            text-align: center;
+            font-size: 35px;
+            line-height: 45px;
+            font-weight: 400;
+            padding: 1rem 0 3rem 0;
+        }
+
+        &__img {
+            width: 101px;
+            height: 210px;
+            margin: auto;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                min-height: auto;
+                margin: auto;
+            }
+        }
+    }
+    &__main {
+        background-color: #01d0c5;
+        padding: 4rem 0;
+        &__content {
+            text-align: center;
+
+            h3.title {
+                color: #1a1e41;
+                font-size: 36px;
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 1.4em;
+                padding: 0 0 3rem 0;
+            }
+
+            .founding_cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__wrapper {
+                    width: 430px;
+                    height: 337px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin: 0 2rem;
+                    transform: scale(1);
+                    transition: transform 0.2s ease-in-out;
+
+
+                    h4.title {
+                        color: #ffcd07;
+                        font-size: 32px;
+                        line-height: 42px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        padding: 2rem 0;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 19px;
+                        line-height: 23px;
+                        font-weight: 400;
+                        text-align: left;
+                        padding: 0 1rem 1rem 1rem;
+                    }
+                    a.btn.btn-warning {
+                        border: none;
+                        font-size: 20px;
+                        line-height: 26px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        color: #171d40;
+                        margin: 4rem 0 0 0;
+                        border-radius: 30px;
+                        padding: 8px 30px;
+                    
+
+                        &:hover {
+                           background-color: #e6c154;
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                     }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+

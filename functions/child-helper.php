@@ -5,9 +5,9 @@
 
 function register_theme_menus() {
    register_nav_menus(array(
-     'header-menu'     => __('Header Menu', 'qstheme'), // Main Navigation
-     'top-header-menu' => __('Top Header Menu', 'qstheme'),
-     'footer-menu'     => __('Footer Menu', 'qstheme'),
+     'header-menu'     => __('Header Menu', 'the5ers'), // Main Navigation
+     'top-header-menu' => __('Top Header Menu', 'the5ers'),
+     'footer-menu'     => __('Footer Menu', 'the5ers'),
    ));
 }
 
@@ -32,3 +32,4 @@ function header_menu() {
 		)
 	);
 }
+add_action('init', 'register_theme_menus');
