@@ -1,0 +1,170 @@
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap";
+@import '~normalize.css/normalize.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands'; 
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap');
+//@import "~font-awesome/css/font-awesome.css";
+
+@import './colors';
+@import './templates/home';
+@import './templates/about';
+@import './templates/contact';
+@import './templates/post.scss';
+
+@import './components/header';
+@import './components/footer';
+
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Remove list styles (bullets/numbers) */
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+/* revert the 'white-space' property for textarea elements on Safari */
+
+textarea {
+    white-space: revert;
+}
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly. */
+
+:where([contenteditable]) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body {
+    font-family: 'Raleway', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+}
+
+body {
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+/************* E N D *****************/
