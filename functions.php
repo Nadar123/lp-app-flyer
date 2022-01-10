@@ -1,7 +1,7 @@
 <?php
-  get_template_part('/function/enqueue');
-  get_template_part('/function/child-helper');
-  get_template_part('/function/types');
+  get_template_part('/functions/enqueue');
+  get_template_part('/functions/child-helper');
+  get_template_part('/functions/types');
 
 
   if( function_exists('add_theme_support') ) {
