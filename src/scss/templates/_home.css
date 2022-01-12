@@ -57,16 +57,14 @@
   margin: auto;
 }
 
-.page-wrapper__main {
-  background-color: #01d0c5;
-  padding: 4rem 0;
-}
-
 .page-wrapper__main__content {
+  background-color: #01d0c573;
+  padding: 4rem 0;
   text-align: center;
 }
 
 .page-wrapper__main__content h3.title {
+  font-family: "Courier New", Courier, monospace;
   color: #1a1e41;
   font-size: 36px;
   font-weight: 800;
@@ -90,6 +88,7 @@
   margin: 0 2rem;
   transform: scale(1);
   transition: transform 0.2s ease-in-out;
+  overflow: hidden;
 }
 
 .page-wrapper__main__content .founding_cards__wrapper h4.title {
@@ -127,5 +126,196 @@
 }
 
 .page-wrapper__main__content .founding_cards__wrapper:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.page-wrapper__main .choose_founding_wrapper {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+.page-wrapper__main .choose_founding_wrapper h3.title {
+  font-family: "Courier New", Courier, monospace;
+  color: #1a1e41;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .035px;
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+
+.page-wrapper__main .choose_founding_wrapper__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.page-wrapper__main .choose_founding_wrapper__content .inner {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.page-wrapper__main .choose_founding_wrapper__content .inner h4.title {
+  font-family: "Courier New", Courier, monospace;
+  color: #1a1e41;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 0 1rem 0;
+}
+
+.page-wrapper__main .choose_founding_wrapper__content .inner p.text {
+  color: #1a1e41;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 70%;
+  margin: auto;
+}
+
+.tabs {
+  max-width: 80%;
+  width: 80%;
+  margin: auto;
+}
+
+.tabs ul {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 2rem 0;
+}
+
+.tabs a.tab-link {
+  background: #fff;
+  border: 1px solid #1a1e41;
+  color: #1a1e41;
+  display: block;
+  font-weight: 600;
+  padding: 10px 25px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.tabs a.tab-link:hover {
+  color: #333;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tabs .tab-active a.tab-link {
+  background-color: #1a1e41;
+  color: #fff;
+  cursor: default;
+}
+
+.tabs .tab-active a.tab-link:hover {
+  color: none;
+  box-shadow: none;
+}
+
+.challenge-modal-wrapper {
+  position: relative;
+  background: #01d0c573;
+  width: 100%;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.challenge-modal-wrapper__content {
+  position: relative;
+}
+
+.challenge-modal-wrapper__content .ribbon_wrapper {
+  position: absolute;
+  top: 14.5vh;
+  left: 17.756vw;
+  transform: translate(-1px, -3px);
+}
+
+.challenge-modal-wrapper__content h3.title {
+  color: #1a1e41;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0 0 3rem 0;
+}
+
+.challenge-modal-wrapper__content .flex-table {
+  max-width: 1150px;
+  margin: auto;
+  background-color: #fff;
+  padding: 0 0 2rem 0;
+}
+
+.challenge-modal-wrapper__content .flex-table h3.title {
+  font-family: "Courier New", Courier, monospace;
+  color: #ffcd07;
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 8px;
+  background: #1a1e41;
+}
+
+.challenge-modal-wrapper__content .flex-table .inner-title h4.subtitle {
+  color: #1a1e41;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 1rem 8px 1.5rem 8px;
+}
+
+.challenge-modal-wrapper__content .flex-table table.founded-leves,
+.challenge-modal-wrapper__content .flex-table table.bootcamp {
+  margin: 0 !important;
+  width: 100%;
+}
+
+.challenge-modal-wrapper__content .flex-table table.founded-leves thead tr,
+.challenge-modal-wrapper__content .flex-table table.bootcamp thead tr {
+  width: 100%;
+}
+
+.challenge-modal-wrapper__content .flex-table table.founded-leves thead tr th,
+.challenge-modal-wrapper__content .flex-table table.bootcamp thead tr th {
+  width: 17%;
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.challenge-modal-wrapper__content .flex-table table.founded-leves tbody tr td .title-wrap,
+.challenge-modal-wrapper__content .flex-table table.bootcamp tbody tr td .title-wrap {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+  padding: 10x 0;
+}
+
+.challenge-modal-wrapper__content .flex-table table.founded-leves tbody #col-0 .title-wrap p,
+.challenge-modal-wrapper__content .flex-table table.founded-leves tbody #col-1 .title-wrap p,
+.challenge-modal-wrapper__content .flex-table table.founded-leves tbody #col-2 .title-wrap p,
+.challenge-modal-wrapper__content .flex-table table.bootcamp tbody #col-0 .title-wrap p,
+.challenge-modal-wrapper__content .flex-table table.bootcamp tbody #col-1 .title-wrap p,
+.challenge-modal-wrapper__content .flex-table table.bootcamp tbody #col-2 .title-wrap p {
+  margin: 10px 0;
+  padding: 10x 0;
+}
+
+table#lol {
+  width: 100%;
 }

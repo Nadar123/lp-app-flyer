@@ -32,8 +32,8 @@ $logo_site = get_field('logo_site', 'option')
 		<div class="main-nav-wrapper">
 			<div class="row-wrapper">
 				<div class="logo">
-					<a href="<?php echo home_url(); ?>" role="logo">
-						<img src="<?php echo $logo_site['url']; ?>" alt="">
+					<a id="logo-wrapper" href="<?php echo home_url(); ?>" role="logo">
+						<img class="logo-header" src="<?php echo $logo_site['url']; ?>" alt="">
 					</a>
 				</div>
 
@@ -44,5 +44,30 @@ $logo_site = get_field('logo_site', 'option')
 				</div>
 			</div>
 		</div>
-	</header>
+	
 
+	
+  <!-- site-navbar start -->
+  <div class="navbar-area">
+    <div class="container">
+      <nav class="site-navbar">
+	  <div class="logo">
+		<a id="logo-wrapper" href="<?php echo home_url(); ?>" role="logo">
+			<img class="logo-header" src="<?php echo $logo_site['url']; ?>" alt="">
+		</a>
+	</div>
+
+        <!-- site menu/nav -->
+		<?php header_menu(); ?>
+
+
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </div><!-- navbar-area end -->
+  </header>
+
+ 

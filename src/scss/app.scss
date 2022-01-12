@@ -7,7 +7,7 @@
 // @import '~@fortawesome/fontawesome-free/scss/brands'; 
 
 // @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap');
-@import '~font-awesome/css/font-awesome.css';
+// @import '~font-awesome/css/font-awesome.css';
 
 @import './colors';
 @import './templates/home';
@@ -17,6 +17,7 @@
 
 @import './components/header';
 @import './components/footer';
+@import './components/tables';
 
 
 *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {

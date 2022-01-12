@@ -1,0 +1,199 @@
+.tabs-stage {
+    position: relative;
+    width: 100%;
+
+    table.founding-table-option {
+        border-collapse: collapse;
+        width: 100%;
+
+        thead {
+            background-color: #1a1e41;
+            padding: 10px;
+            margin: 10px;
+
+            th {
+                font-family: "Courier New", Courier, monospace;
+                font-size: 26px;
+                font-weight: 700;
+                color: #ffcd07;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 16px;
+
+                &:nth-child(1){
+                    width: 30%;
+                }
+
+                &#head2 {
+                    position: relative;
+                    border-left: 1px solid #fff;
+                    border-right: 1px solid #fff;
+
+                    // &::before {
+                        
+                    //     content: 'POPULAR';
+                    //     position: absolute;
+                    //     top: 15px;
+                    //     left: 77%;
+                    //     font-size: 25px;
+                    //     line-height: 26px;
+                    //     font-weight: bold;
+                    //     color: #fff;
+                    //     transform: rotate(50deg);
+                    //     background: #1cd8d2;
+                    //     width: 130px;
+                    //     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+                    //     padding: 4px 0;
+                    //     text-shadow: -1px -1px 0 #00000020, 1px -1px 0 #00000020, -1px 1px 0 #00000020, 1px 1px 0 #00000020;
+                    // }
+                }
+            }
+        }
+        tbody {
+            tr  {
+                .icon-title-wrapper {
+                    font-weight: bold;
+                }
+                td {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #000;
+                    text-align: center;
+                    padding: 16px;
+    
+                    &:nth-child(1){
+                        text-align: left;
+                        width: 30%;
+                        cursor: pointer;
+
+                        svg.svg-inline--fa {
+                            color: #01D0C5; 
+                            transform: rotate(0deg);
+                            
+                            &.rotate {
+                               transform: rotate(90deg);
+                            }
+                        }
+
+
+                    }
+                    .hidden-text {
+                        display: none;
+                        background: #fff;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        padding: 1rem;
+                        
+                        &.open {
+                            display: block;
+                        }
+                    }
+                    .title-wrap {
+                        position: relative;
+                    }
+                }
+                &:nth-child(1){
+                    color: #1a1e41;
+                    padding: 10px 15px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    
+                    &:nth-child(1) {
+                        .icon-title-wrapper {
+                            display: none;
+                        }
+                    }  
+
+                    &:nth-child(2) {
+                        display: none;
+                        .icon-title-wrapper {
+                            svg {
+                                display: none;
+                            }
+                        }
+                    } 
+                }
+                &:nth-child(2){
+                    .title-wrap {
+                        .svg {
+                            display: none;
+                        }
+                    }  
+                }
+      
+                &:nth-child(8) {
+                    font-weight: bold;
+                    font-size: 24px;
+                    color: blue;
+                }
+        
+                &:hover {
+                    border-bottom: 1px solid #000;
+                    border-top: 1px solid #000;
+                }
+            }
+            #col-1 {
+                .title-wrap.dynamic-row-1 {
+                    // padding: 0 2rem;
+                    svg.svg-inline--fa {
+                        display: none;
+                    }   
+                }
+            }
+            #col-11 {
+                .row-one {
+                    span#row-one {
+                        border: 1px solid #000;
+                        border: 1px solid #000;
+                        color: #fff;
+                        background-color: #1a1e41;
+                        padding: 8px 20px;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: transparent;
+                            color: #1a1e41;
+                        }
+                    }
+                 }
+                 .row-two {
+                    span#row-two {
+                        border: 1px solid #000;
+                        color: #fff;
+                        background-color: #1a1e41;
+                        padding: 8px 20px;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: transparent;
+                            color: #1a1e41;
+                        }
+                    }
+                 }
+                 .row-three {
+                    span#row-three {
+                        border: 1px solid #000;
+                        color: #fff;
+                        background-color: #1a1e41;
+                        padding: 8px 20px;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: transparent;
+                            color: #1a1e41;
+                        }
+                    }
+                 }
+            }
+        }
+    }
+}
+
+
+#box5 {
+    display: none;
+}
