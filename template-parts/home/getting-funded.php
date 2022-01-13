@@ -57,3 +57,4 @@ $getting_funded_accordion_rpt   = get_field('getting_funded_accordion_rpt');
             </div>
         </div>
     </div>
+</section>

@@ -15,9 +15,8 @@ jQuery(window).on('load', function($) {
     moblieNavBar();
     scrollEvent();
     handleTabs();
-    handleTableHomePageText()
-
-
+    handleTableHomePageText();
+    handleAccordionJstrading();
     
 
 
@@ -89,3 +88,24 @@ function handleTableHomePageText() {
 }
  
 console.log('hello12344');
+
+// handle Accordion trading home page tade experience section 
+function handleAccordionJstrading () {
+  $(".set > a").on("click", function(e) {
+      e.preventDefault();
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".content").slideUp(200);
+      $(".set > a .fas").removeClass("fa-minus").addClass("fa-plus");
+
+    } else {
+      $(".set > a .fas").removeClass("fa-minus").addClass("fa-plus");
+      $(this).find(".fas").removeClass("fa-plus");
+      $(".set > a").removeClass("active");
+      $(this).addClass("active");
+      $(".content").slideUp(200);
+      $(this).siblings(".content").slideDown(200);
+    }
+  });
+}
+
