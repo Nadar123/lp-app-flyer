@@ -12,6 +12,9 @@ $funded_levels_table_inner_tilte     = get_field('funded_levels_table_inner_tilt
 $funded_levels_table_rpt             = get_field('funded_levels_table_rpt');
 $funded_levels_table_body_rpt        = get_field('funded_levels_table_body_rpt');
 
+$more_btn_link_url                   = get_field('more_btn_link_url');
+
+
 ?>
 
 <section class="challenge-modal-wrapper" style="background-imge: url(<?php echo $challenge_modal_background['url']?>);">
@@ -27,7 +30,7 @@ $funded_levels_table_body_rpt        = get_field('funded_levels_table_body_rpt')
                 <div class="inner-title">
                     <h4 class="subtitle"><?php echo $challenge_modal_table_inner_title;?></h4>
                 </div>
-                <div class="table-wrapper">
+                <div class="table-wrapper scroll-inner">
                     <table class="bootcamp">
                         <thead>
                             <tr class="challenge-modal-topic">
@@ -89,7 +92,7 @@ $funded_levels_table_body_rpt        = get_field('funded_levels_table_body_rpt')
             <div class="inner-title">
                 <h4 class="subtitle"><?php echo $funded_levels_table_inner_tilte;?></h4>
             </div>
-            <div class="table-wrapper">
+            <div class="table-wrapper scroll-inner">
                 <table class="founded-leves">
                     <thead>
                         <tr class="challenge-modal-topic">
@@ -144,6 +147,9 @@ $funded_levels_table_body_rpt        = get_field('funded_levels_table_body_rpt')
                     </tbody>
                 </table>
             </div>
+        </div>
+        <div class="learn-more-btn">
+            <a class="btn btn-warning" href="<?php echo $more_btn_link_url;?>"><?php echo __('Learn More',''); ?></a>
         </div>
     </div>
 </section>
