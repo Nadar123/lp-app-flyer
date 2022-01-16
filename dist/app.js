@@ -17038,7 +17038,7 @@ jQuery(window).on('load', function ($) {
   scrollEvent();
   handleTabs();
   handleTableHomePageText();
-  handleAccordionJstrading();
+  handleFooterMobileAccordiong(); // handleAccordion();
 }); // handle scroll fixed nav menu
 
 function scrollEvent() {
@@ -17101,9 +17101,10 @@ function handleTableHomePageText() {
     $('.hidden-text').next().slideToggle('slow');
     $(this).find('svg.svg-inline--fa').toggleClass('rotate');
   });
-}
+} // console.log('hello12344');
+// alert('ggg');
+// handle Accordion trading home page tade experience section 
 
-console.log('hello12344'); // handle Accordion trading home page tade experience section 
 
 function handleAccordionJstrading() {
   $(".set > a").on("click", function (e) {
@@ -17122,6 +17123,19 @@ function handleAccordionJstrading() {
       $(this).siblings(".content").slideDown(200);
     }
   });
+} // handle footer Accordion
+
+
+function handleFooterMobileAccordiong() {
+  var width = $(window).width();
+
+  if (width <= 769) {
+    jQuery('.footer-wrapper .menu-item-has-children').on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      jQuery(this).find('.sub-menu').slideToggle("slow");
+    });
+  }
 }
 
 /***/ }),

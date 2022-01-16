@@ -41,6 +41,8 @@
   //   add_theme_support('title-tag');
   // }
   // add_action('after_setup_theme', 'fivers_features');
+
+
   // add_action('wp_ajax_nopriv_get_post_data', 'get_post_data');
   // add_action('wp_ajax_get_post_data', 'get_post_data');
 

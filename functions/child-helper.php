@@ -15,7 +15,7 @@ function register_theme_menus() {
 function footer_menu() {
 	wp_nav_menu(
 		array(
-			'theme_location'  => 'footer-menu-one',
+			'theme_location'  => 'footer-menu',
 			'menu_class'      => 'nav-menu-items',
 			'container'       => ''
 		)
@@ -32,4 +32,4 @@ function header_menu() {
 		)
 	);
 }
-add_action('init', 'register_theme_menus');
+// add_action('init', 'register_theme_menus');
