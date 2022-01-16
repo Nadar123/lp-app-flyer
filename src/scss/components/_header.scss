@@ -65,6 +65,7 @@
                             a {
                                 display: flex;
                                 align-items: baseline;
+                            
 
                                 svg {
                                     margin: 0 0 0 5px;
@@ -82,11 +83,82 @@
                                     left: 15px;
                                     width: 300px;
                                     height: auto;
-                                    padding: 1rem;
                                     display: block;
                                     z-index: 9;
-                                    background-color: green;
+                                    background-color: #fff;
                                     color: #000;
+
+                                    li {
+                                        padding: 10px 1rem;
+                                        a {
+                                            text-transform: capitalize;
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 24px;
+                                            color: #000;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            
+                                            svg.svg-inline--fa.fa-sort-down {
+                                                transform: rotate(270deg);
+                                            }
+                                        
+
+                                            &:hover {
+                                                border-bottom: none;
+                                                color: #fff;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            background-color:#1a1e41;
+                                            a {
+                                                color: #fff
+                                            }
+                                        }
+
+                                        &.menu-item-has-children {
+                                            .sub-menu {
+                                                display: none;
+                                            }
+
+                                            &:hover {
+                                                .sub-menu {
+                                                    position: absolute;
+                                                    top: 0px;
+                                                    left: 300px;
+                                                    width: 300px;
+                                                    height: auto;
+                                                    display: block;
+                                                    z-index: 9;
+                                                    background-color: #fff;
+                                                    color: #000;
+                                                    li {
+                                                        padding: 10px 1rem;
+                                                        
+                                                        a {
+                                                            font-size: 14px;
+                                                            font-weight: 500;
+                                                            line-height: 24px;
+                                                            color: #000;
+                                                            text-transform: capitalize;
+                
+                                                            &:hover {
+                                                                border-bottom: none;
+                                                                color: none;
+                                                            }
+                                                        }
+                                                        &:hover {
+                                                            background-color:#1a1e41;
+                                                            a {
+                                                                color: #fff;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

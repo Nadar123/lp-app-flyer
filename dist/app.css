@@ -12617,11 +12617,69 @@ textarea.form-control-lg {
   left: 15px;
   width: 300px;
   height: auto;
-  padding: 1rem;
   display: block;
   z-index: 9;
-  background-color: green;
+  background-color: #fff;
   color: #000;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li {
+  padding: 10px 1rem;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li a {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li a svg.svg-inline--fa.fa-sort-down {
+  transform: rotate(270deg);
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li a:hover {
+  border-bottom: none;
+  color: #fff;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li:hover {
+  background-color: #1a1e41;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li:hover a {
+  color: #fff;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li.menu-item-has-children .sub-menu {
+  display: none;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li.menu-item-has-children:hover .sub-menu {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  width: 300px;
+  height: auto;
+  display: block;
+  z-index: 9;
+  background-color: #fff;
+  color: #000;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li.menu-item-has-children:hover .sub-menu li {
+  padding: 10px 1rem;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li.menu-item-has-children:hover .sub-menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+  text-transform: capitalize;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li.menu-item-has-children:hover .sub-menu li a:hover {
+  border-bottom: none;
+  color: none;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li.menu-item-has-children:hover .sub-menu li:hover {
+  background-color: #1a1e41;
+}
+.header .main-nav-wrapper .row-wrapper .menu-wrapper nav li.menu-item-has-children:hover .sub-menu li.menu-item-has-children:hover .sub-menu li:hover a {
+  color: #fff;
 }
 
 .header.active {
@@ -12874,6 +12932,18 @@ textarea.form-control-lg {
   .footer-wrapper #menu-footer-menu li.menu-item-has-children {
     width: 100%;
     max-width: 100%;
+  }
+  .footer-wrapper #menu-footer-menu li.menu-item-has-children::before {
+    content: "";
+    position: absolute;
+    right: 80px;
+    top: 8px;
+    transition: all 0.2s ease-in-out;
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    transform: rotate(135deg);
   }
 }
 .footer-wrapper #menu-footer-menu li.menu-item-has-children a {
