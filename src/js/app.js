@@ -16,7 +16,8 @@ jQuery(window).on('load', function($) {
     scrollEvent();
     handleTabs();
     handleTableHomePageText();
-    handleFooterMobileAccordiong()
+    handleAccordionJstrading();
+    // handleFooterMobileAccordiong()
     // handleAccordion();
 
   

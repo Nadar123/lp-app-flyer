@@ -17038,7 +17038,8 @@ jQuery(window).on('load', function ($) {
   scrollEvent();
   handleTabs();
   handleTableHomePageText();
-  handleFooterMobileAccordiong(); // handleAccordion();
+  handleAccordionJstrading(); // handleFooterMobileAccordiong()
+  // handleAccordion();
 }); // handle scroll fixed nav menu
 
 function scrollEvent() {

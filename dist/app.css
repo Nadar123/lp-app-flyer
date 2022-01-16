@@ -11677,7 +11677,7 @@ textarea.form-control-lg {
   font-size: 35px;
   line-height: 45px;
   font-weight: 400;
-  padding: 1rem 0;
+  padding: 2rem 0 8px 0;
 }
 @media (max-width: 767.98px) {
   .page-wrapper__content h2.subtitle, .page-wrapper__content .subtitle.h2 {
@@ -11691,7 +11691,7 @@ textarea.form-control-lg {
   font-size: 35px;
   line-height: 45px;
   font-weight: 400;
-  padding: 1rem 0 3rem 0;
+  padding: 0 0 3rem 0;
 }
 @media (max-width: 767.98px) {
   .page-wrapper__content h3.small-title, .page-wrapper__content .small-title.h3 {
@@ -12286,7 +12286,7 @@ textarea.form-control-lg {
   width: 75%;
   margin: 10px auto;
   height: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 @media (max-width: 767.98px) {
   .trading-wrapper__content .accordion-container {
