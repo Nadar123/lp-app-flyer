@@ -27,14 +27,3 @@ $contact_us_home_address        = get_field('contact_us_home_address');
 
 
 </section>
-
-
-
-
-<div class="form-group">
-  
-</div>
-
-  
-  
-

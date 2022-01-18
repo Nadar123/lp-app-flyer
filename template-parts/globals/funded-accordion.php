@@ -14,26 +14,26 @@ $funded_accordion_rpt = get_field('funded_accordion_rpt', 'option');
         <h4 class="text"><?php echo $funded_subtitle ?></h4>
     </div>
     <div class="accordion-container">
-            <?php if( $funded_accordion_rpt ) : ?>
-                <?php foreach( $funded_accordion_rpt as $key => $item ) : 
-                    $title   = $item['title'];
-                    $text    = $item['text'];
-                ?>
+        <?php if( $funded_accordion_rpt ) : ?>
+            <?php foreach( $funded_accordion_rpt as $key => $item ) : 
+                $title   = $item['title'];
+                $text    = $item['text'];
+            ?>
 
-                    <div class="set">
-                        <a href="#">
-                        &#10003
-                        <?php echo $title; ?>
-                        <i class="fas fa-plus"></i>
-                        <i class="fas fa-minus"></i>
-                        </a>
-                        <div class="content">
-                        <p class="text"><?php echo $text; ?></p>
-                        </div>
+                <div class="set">
+                    <a href="#">
+                    &#10003
+                    <?php echo $title; ?>
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i>
+                    </a>
+                    <div class="content">
+                    <p class="text"><?php echo $text; ?></p>
                     </div>
+                </div>
 
-                <?php endforeach;?>
-            <?php endif; ?>
-        </div>
-  </section>
+            <?php endforeach;?>
+        <?php endif; ?>
+    </div>
+</section>
 

@@ -55,16 +55,23 @@
                 "operator": "==",
                 "value": "view\/contact.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "view\/faq.php"
+            }
         ]
     ],
     "menu_order": 0,
     "position": "acf_after_title",
     "style": "default",
-    "label_placement": "top",
+    "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1642501448
+    "modified": 1642508169
 }
