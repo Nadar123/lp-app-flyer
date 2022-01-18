@@ -15,7 +15,9 @@ $logo_site = get_field('logo_site', 'option')
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    
+
+
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <?php wp_head();?>
 </head>
 <body <?php echo body_class(); ?>>

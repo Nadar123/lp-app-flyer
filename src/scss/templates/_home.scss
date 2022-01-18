@@ -263,8 +263,8 @@
 
         .ribbon_wrapper {
             position: absolute;
-            top: 14.5vh;
-            left: 17.756vw;
+            top: 10.8vh;
+            left: 9.756vw;
             transform: translate(-1px, -3px);
 
             @include media-breakpoint-down(md) {
@@ -558,6 +558,73 @@
             }
         }
     }
+    .accordion-container {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 60%;
+        margin: 10px auto;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            display: block;
+
+        }
+    
+        .accordion-container > h2{
+            text-align: center;
+            color: #1a1e41;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+        }
+    
+        .set{
+            position: relative;
+            width: 50%;
+            height: auto;
+
+        }
+    
+        .set > a {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            color: #1a1e41;
+            font-weight: 600;
+            text-transform: uppercase;
+            -webkit-transition:all 0.2s linear;
+            -moz-transition:all 0.2s linear;
+            transition:all 0.2s linear;
+        }
+    
+        .fa-minus {
+            display: none;
+        }
+    
+        .active {
+          .fa-plus {
+              color: #1a1e41;
+              display: none;
+          }
+          .fa-minus {
+            color: #1a1e41;
+              display: inline-block;
+          }
+        }
+        
+        .content {
+            background-color: rgb(243, 242, 242);
+            display:none;
+            text-align: left;
+            p {
+                padding: 10px 15px;
+                margin: 0;
+               color: #1a1e41;
+            }
+        }
+    }
+
 }
 //accordion//
 .accordion {
@@ -626,6 +693,7 @@
     &__content {
     display: flex;
     justify-content: center;
+    height: 85vh;
 
     @include media-breakpoint-down(md) {
         display: block;
@@ -731,7 +799,7 @@
             .content {
                 display:none;
                 p {
-                    padding: 10px 15px;
+                    padding: 0 15px 8px 15px;
                     margin: 0;
                     color: #fff;
                 }
@@ -767,6 +835,7 @@
         justify-content: center;
         width: 70%;
         margin: auto;
+        padding: 2rem 0;
 
         @include media-breakpoint-down(md) {
             width: 90%;

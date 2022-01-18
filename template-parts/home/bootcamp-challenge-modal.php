@@ -24,14 +24,14 @@ $more_btn_link_url                   = get_field('more_btn_link_url');
         </div>
         <h3 class="title"><?php echo $challenge_modal_title; ?></h3>
 
-        <div class="flex-table">
+        <div class="flex-table" data-aos="flip-up">
             <h3 class="title"><?php echo $challenge_modal_table_title; ?></h3>
             <div class="flex-table_view">
                 <div class="inner-title">
                     <h4 class="subtitle"><?php echo $challenge_modal_table_inner_title;?></h4>
                 </div>
                 <div class="table-wrapper scroll-inner">
-                    <table class="bootcamp">
+                    <table class="bootcamp" data-aos="zoom-in">
                         <thead>
                             <tr class="challenge-modal-topic">
                             <?php if($challenge_modal_table_rpt) :?>
@@ -93,7 +93,7 @@ $more_btn_link_url                   = get_field('more_btn_link_url');
                 <h4 class="subtitle"><?php echo $funded_levels_table_inner_tilte;?></h4>
             </div>
             <div class="table-wrapper scroll-inner">
-                <table class="founded-leves">
+                <table class="founded-leves" data-aos="zoom-in">
                     <thead>
                         <tr class="challenge-modal-topic">
                             <?php if($funded_levels_table_rpt) :?>
@@ -148,7 +148,7 @@ $more_btn_link_url                   = get_field('more_btn_link_url');
                 </table>
             </div>
         </div>
-        <div class="learn-more-btn">
+        <div data-aos="fade-up" class="learn-more-btn">
             <a class="btn btn-warning" href="<?php echo $more_btn_link_url;?>"><?php echo __('Learn More',''); ?></a>
         </div>
     </div>

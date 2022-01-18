@@ -6,7 +6,7 @@ $home_main_section_rpt   = get_field('home_main_section_rpt');
 
     <h3 class="title"><?php echo $home_main_section_title; ?></h3>
 
-    <div class="founding_cards">
+    <div class="founding_cards" data-aos="zoom-in">
         <?php if($home_main_section_rpt) : ?>
 
         <?php foreach($home_main_section_rpt as $key=> $item) :

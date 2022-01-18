@@ -23,7 +23,7 @@ $company_icon_rpt         = get_field('company_icon_rpt');
         </a>
     </div>
     <!-- End TrustBox widget -->
-    <div class="button-wrapper">
+    <div class="button-wrapper" data-aos="zoom-in">
         <a class="btn btn-warning" href="<?php echo $become_fivers_funded_link;?>">
             <?php echo __('Become a 5%ers funded trader now', '') ?>
         </a>

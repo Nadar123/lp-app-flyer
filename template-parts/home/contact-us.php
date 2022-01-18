@@ -13,7 +13,8 @@ $contact_us_home_address        = get_field('contact_us_home_address');
         <h4 class="subtitle"><?php echo $contact_us_home_page_subtitle; ?></h4>
 
         <div class="contact-wrapper">
-          <div class="form-wrapper">
+          <div class="form-wrapper" data-aos="zoom-in"
+          >
             <?php echo $testForm;?>
           </div>
           <div class="addres-wrapper">

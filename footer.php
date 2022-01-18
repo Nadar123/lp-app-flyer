@@ -6,7 +6,7 @@ $footer_copyrightrs_and_text  = get_field('footer_copyrightrs_and_text', 'option
 ?>
       
       <footer class="footer-wrapper">
-        <div class="footer-wrapper__inner">
+        <div class="footer-wrapper__inner" >
               <?php footer_menu(); ?>
 
               <div class="widget-wrapper">
@@ -75,7 +75,9 @@ $footer_copyrightrs_and_text  = get_field('footer_copyrightrs_and_text', 'option
         <div class="fivers-footer-info">
             <?php echo $footer_copyrightrs_and_text; ?>
         </div>
+
       </footer>
+   
 
       <?php wp_footer(); ?>
     </body>

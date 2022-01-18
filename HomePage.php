@@ -14,7 +14,7 @@ $home_background_hero    = get_field('home_background_hero');
       
       <?php get_template_part('template-parts/home/funding-journey'); ?>
 
-      <?// php get_template_part('template-parts/home/choose-founding'); ?>
+      <?php get_template_part('template-parts/home/choose-founding'); ?>
 
       <?php get_template_part('template-parts/home/bootcamp-challenge-modal'); ?>
 

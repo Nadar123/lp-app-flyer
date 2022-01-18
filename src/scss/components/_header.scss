@@ -6,7 +6,7 @@
     box-sizing: border-box;
     transition: .5s;
     padding: 2.756rem 1rem;
-    background-color: rgba(26, 30, 65, 0.5);
+    background-color: transparent;
     // background-color: transparent;
     @include media-breakpoint-down(md) {
         padding: 0 1rem;
@@ -90,6 +90,7 @@
 
                                     li {
                                         padding: 10px 1rem;
+                                        border-bottom: 1px solid #eaeaea;  
                                         a {
                                             text-transform: capitalize;
                                             font-size: 14px;
@@ -112,6 +113,7 @@
 
                                         &:hover {
                                             background-color:#1a1e41;
+                                            border-bottom: 1px solid #1a1e41;
                                             a {
                                                 color: #fff
                                             }

@@ -8,7 +8,7 @@ $trading_experience_rpt           = get_field('trading_experience_rpt');
 
 <section class="trading-wrapper" style="background-image:url(<?php echo $trading_experience_background['url']?>)">
   <div class="trading-wrapper__content">
-    <div class="trading-wrapper__content__inner">
+    <div class="trading-wrapper__content__inner" data-aos="zoom-in">
       <h3 class="title"><?php echo $trading_experience_title ?></h3>
   
       <div class="image-wrapper">
