@@ -6,13 +6,23 @@
 
 
     &__inner {
+        width: 65%;
+        margin: auto;
+
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+    }
+
+    .footer-wrapper__content {
         width: 100%;
         background-color: #1a1e41;
         color: #fff;
         padding: 4rem 0;
         display: flex;
-        justify-content: center;
-
+        justify-content: space-between;
+        
         @include media-breakpoint-down(md) {
             padding: 2rem 0;
             display: block;
@@ -28,7 +38,6 @@
         padding: 0 0 2rem 0;
 
         @include media-breakpoint-down(md) {
-           // display: block;
            padding: 2rem 0;
         }
         
@@ -202,12 +211,11 @@
     }
 
     .fivers-footer-info {
-        width: 56%;
         margin: auto;
 
         @include media-breakpoint-down(md) {
-            display: none;
-            width: 85%;
+            width: 100%;
+            padding: 0 10px;
         }
 
         h3 {
@@ -217,16 +225,19 @@
             list-style: 30px;
             font-weight: 500;
             @include media-breakpoint-down(md) {
-                font-size: 14px;
-                
+                font-size: 12px;
+                text-align: center;
             }
         }
-        p {
 
+        p {
             font-size: 14px;
             line-height: 22px;
             font-weight: 400;
             letter-spacing: 1px;
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
         }
         pre {
             font-size: 14px;
@@ -234,6 +245,9 @@
             font-weight: 400;
             padding: 10px 0;
             letter-spacing: 1px;
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
         }
         strong {
             font-weight: bold;
@@ -242,15 +256,3 @@
         }
     }
 }
-////////////////////////////////////////
-// @include media-breakpoint-down(md) {
-//     #menu-footer-menu {
-//         .menu-item-has-children {
-          
-
-//         }
-//         .sub-menu {
-//             display: none;
-//         }
-//     }
-// }

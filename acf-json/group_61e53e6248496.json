@@ -48,6 +48,13 @@
                 "operator": "==",
                 "value": "view\/why-trade-with-us.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "view\/contact.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -59,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1642432935
+    "modified": 1642501448
 }

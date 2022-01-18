@@ -9,12 +9,16 @@
         @include media-breakpoint-down(md) {
             background-position: right;
             height: 30vh;
+            margin: 4rem 0 0 0;
         }
 
         &__content {
             width: 65%;
             margin: auto;
 
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
             h1.title {
                 padding: 16rem 0 0 0;
                 font-size: 55px;
@@ -23,7 +27,7 @@
                 @include media-breakpoint-down(md) {
                     font-size: 22px;
                     line-height: 29px;
-                    padding: 12rem 0 0 0;
+                    padding: 12rem 10px;
                 }
             }
         }
@@ -34,26 +38,31 @@
         margin: auto;
         text-align: left;
         border-bottom: 1px solid rgba(0,0,0, 0.4);
+        display: flex;
+        justify-content: space-between;
         
-        h3.title {
-            color: #171d40;
-            font-size: 35px;
-            line-height: 45px;
-            font-weight: 800;
-            width: 65%;
-            text-align: left;
-            padding: 3rem 0;
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            display: block;
         }
+
+        h3.title,
         .sub {
             color: #171d40;
-            font-size: 35px;
-            line-height: 45px;
+            font-size: 25px;
+            line-height: 35px;
             font-weight: 800;
-
-            width: 70%;
+            width: 50%;
             text-align: left;
-            padding: 3rem 0;
+            padding: 3rem 1rem;
+            margin: auto;
+            @include media-breakpoint-down(md) {
+                font-size: 18px;
+                line-height: 28px;
+                width: 100%;
 
+                padding: 1rem 10px;
+            }
         }
     }
 
@@ -65,6 +74,10 @@
             width: 65%;
             margin: auto;
             text-align: center;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
     
             h3.title {
                 color: #01d0c5;
@@ -124,6 +137,10 @@
                 position: relative;
                 width: 50%;
                 height: auto;
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
     
             }
         
@@ -171,10 +188,17 @@
         padding: 4rem 0;
         background-color: #01d0c573;
 
+        @include media-breakpoint-down(md) {
+            padding: 2rem 0;
+        }
+
         &__inner {
             text-align: center;
             width: 65%;
             margin: auto;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
 
             h3 {
                 color: #171d40;
@@ -182,6 +206,9 @@
                 font-weight: 800;
                 line-height: 45px;
                 padding: 0 0 2rem 0;
+                @include media-breakpoint-down(md) {
+                    font-size: 30px;
+                }
             }
 
             .url-btn-wrapper {
@@ -190,6 +217,12 @@
                   line-height: 28px;
                   font-weight: 700;
                   padding: 10px 40px;
+
+                  @include media-breakpoint-down(md) {
+                      font-size: 15px;
+                      line-height: 21px;
+                      padding: 15px;
+                  }
               }  
             }
         }

@@ -17,8 +17,8 @@ function loadCssJs() {
     wp_register_script( 'revies-widget', "//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js", 1, false );
     wp_enqueue_script( 'revies-widget' );
 
-    wp_register_script('unpkg-js', "https://unpkg.com/aos@2.3.0/dist/aos.js", false );
-    wp_enqueue_script('unpkg-js');
+    // wp_register_script('aos-js', "https://unpkg.com/aos@2.3.0/dist/aos.js", false );
+    // wp_enqueue_script('aos-js');
 
 
 }
@@ -29,13 +29,8 @@ add_action( 'wp_enqueue_scripts', 'loadCssJs', 1001 );
     wp_register_style( 'google-font', "https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" );
     wp_enqueue_style( 'google-font' );
     //
-    wp_register_style( 'aos-css', "https://unpkg.com/aos@2.3.0/dist/aos.css"  );
-    wp_enqueue_style( 'aos-css' );
+    // wp_register_style( 'aos-css', "https://unpkg.com/aos@2.3.0/dist/aos.css"  );
+    // wp_enqueue_style( 'aos-css' );
 
   }
   add_action( 'wp_enqueue_scripts', 'font_css', 1001 );
-
-
-
-  // <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet"
-

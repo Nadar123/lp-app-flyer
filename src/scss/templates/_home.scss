@@ -525,39 +525,41 @@
         }
     }
 
-    &__content {
-
-        h3.title {
-            color: #01d0c5;
-            font-family: patua one,Sans-serif;
-            font-size: 36px;
-            line-height: 42px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: .035px;
-            padding: 0 0 1rem 0;
-            @include media-breakpoint-down(md) {
-                font-size:  30px;
-                line-height: 36px;
+    .global-accordion {
+        .funded-wrapper__content  {
+            h3.title {
+                color: #01d0c5;
+                font-family: patua one,Sans-serif;
+                font-size: 36px;
+                line-height: 42px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .035px;
+                padding: 0 0 1rem 0;
+                @include media-breakpoint-down(md) {
+                    font-size:  30px;
+                    line-height: 36px;
+                }
             }
-        }
+            
+            h4 {
+                color: #1a1e41;
+                font-family: raleway,Sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .035px;
+                padding: 8px 0 2rem 0;
+                line-height: 29px;
         
-        h4 {
-            color: #1a1e41;
-            font-family: raleway,Sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: .035px;
-            padding: 8px 0 2rem 0;
-            line-height: 29px;
-
-            @include media-breakpoint-down(md) {
-                font-size: 20px;
-                line-height: 27px;
+                @include media-breakpoint-down(md) {
+                    font-size: 20px;
+                    line-height: 27px;
+                }
             }
         }
     }
+    
     .accordion-container {
         display: flex;
         flex-wrap: wrap;
@@ -627,58 +629,58 @@
 
 }
 //accordion//
-.accordion {
-    width: 50%;
-    margin: auto;
+// .accordion {
+//     width: 50%;
+//     margin: auto;
 
-    @include media-breakpoint-down(md) {
-        width: 100%;
-    }
+//     @include media-breakpoint-down(md) {
+//         width: 100%;
+//     }
 
-    .accordion-item {
-        border: none;
-    }
-    .accordion-button {
-        color: #000;
-        background-color: #fff;
-        border: none;
-        box-shadow: none;
-        margin: 1rem 0;
+//     .accordion-item {
+//         border: none;
+//     }
+//     .accordion-button {
+//         color: #000;
+//         background-color: #fff;
+//         border: none;
+//         box-shadow: none;
+//         margin: 1rem 0;
 
-        .icon {
-            font-size: 33px;
-            @include media-breakpoint-down(md) {
-                font-size: 25px;
-            }
-        }
+//         .icon {
+//             font-size: 33px;
+//             @include media-breakpoint-down(md) {
+//                 font-size: 25px;
+//             }
+//         }
 
-        h3 {
-            font-family: raleway,Sans-serif;
-            font-size: 20px;
-            line-height: 25px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #1a1e41;
-            margin: 0 6px;
-            @include media-breakpoint-down(md) {
-                font-size: 14px;
-            }
-        }
-    }
+//         h3 {
+//             font-family: raleway,Sans-serif;
+//             font-size: 20px;
+//             line-height: 25px;
+//             font-weight: 700;
+//             text-transform: uppercase;
+//             color: #1a1e41;
+//             margin: 0 6px;
+//             @include media-breakpoint-down(md) {
+//                 font-size: 14px;
+//             }
+//         }
+//     }
 
-    .accordion-collapse {
-        text-align: left;
-        background: #f0f0f0;
-        border-radius: 6px;
+//     .accordion-collapse {
+//         text-align: left;
+//         background: #f0f0f0;
+//         border-radius: 6px;
 
-        p.text {
-            padding: 2rem 10px;
-            font-size: 15px;
-            line-height: 22px;
-            font-weight: 400;
-        }
-    }
-}
+//         p.text {
+//             padding: 2rem 10px;
+//             font-size: 15px;
+//             line-height: 22px;
+//             font-weight: 400;
+//         }
+//     }
+// }
 
 // Trading experience //
 .trading-wrapper {
@@ -691,56 +693,62 @@
     min-height: auto;
 
     &__content {
-    display: flex;
-    justify-content: center;
-    height: 85vh;
+        display: flex;
+        justify-content: space-between;
+        height: 85vh;
+        width: 65%;
+        margin: auto;
 
-    @include media-breakpoint-down(md) {
-        display: block;
-    }
-
-    &__inner {
-        width: 35%;
         @include media-breakpoint-down(md) {
-           width: 100%;
-        
+            display: block;
         }
 
-        .image-wrapper {
-            width: 100px;
-            height: 128px;
-
+        &__inner {
+            width: 35%;
             @include media-breakpoint-down(md) {
-                margin: auto;
-             
-             }
-            img {
-                width: 100%;
-                height: 100%;
+            width: 100%;
+            
             }
-        }
 
-        h3 {
-            color: #01d0c5;
-            font-family: patua one,Sans-serif;
-            font-size: 36px;
-            line-height: 40px;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: .035px;
-            text-align: left;
-            padding: 0 0 2rem 0;
-            @include media-breakpoint-down(md) {
-                font-size: 28px;
+            .image-wrapper {
+                width: 100px;
+                height: 128px;
+
+                @include media-breakpoint-down(md) {
+                    margin: auto;
+                
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            h3 {
+                color: #01d0c5;
+                font-family: patua one,Sans-serif;
+                font-size: 36px;
                 line-height: 40px;
-                text-align: center;
-          
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: .035px;
+                text-align: left;
+                padding: 0 0 2rem 0;
+                @include media-breakpoint-down(md) {
+                    font-size: 28px;
+                    line-height: 40px;
+                    text-align: center;
+            
+                }
             }
         }
-    }
+
+        &__inner {
+            width: 50%;
+        } 
 
         .accordion-wrapper {
-            width: 35%;
+            width: 50%;
           
             @include media-breakpoint-down(md) {
                 width: 100%;
@@ -810,7 +818,7 @@
 //widget//
 .reviews-wrapper {
     .trustpilot-widget {
-        width: 85%;
+        width: 65%;
         margin: auto;
         padding: 4rem 0;
     }
@@ -833,7 +841,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 70%;
+        width: 65%;
         margin: auto;
         padding: 2rem 0;
 
@@ -871,7 +879,7 @@
     }
     
     &__content {
-        width: 80%;
+        width: 65%;
         margin: auto;
         
         @include media-breakpoint-down(md) {
@@ -903,13 +911,14 @@
     .contact-wrapper {
         display: flex;
         align-items: flex-start;
+        justify-content: space-between;
+
         @include media-breakpoint-down(md) {
             display: block;
         }
 
         .form-wrapper {
-            width: 40%;
-            margin: auto;
+          
             @include media-breakpoint-down(md) {
                 width: 85%;
             }
