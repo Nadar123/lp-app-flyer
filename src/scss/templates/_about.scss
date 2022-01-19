@@ -21,11 +21,13 @@
             }
 
             h1.title {
+                color: #fff;
                 padding: 16rem 0 0 0;
                 font-size: 55px;
-                line-height: 44px;
+                line-height: 55px;
                 font-weight: 900;
                 @include media-breakpoint-down(md) {
+                    padding: 12rem 0 0 0;
                     font-size: 22px;
                     line-height: 29px;
                 }
@@ -55,10 +57,6 @@
             }
 
             .content {
-
-                @include media-breakpoint-down(md) {
-                    text-align: center;
-                }
             
                 h3.title {
                     color: #1a1e41;
