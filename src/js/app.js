@@ -22,7 +22,25 @@ jQuery(window).on('load', function($) {
     handleTableHomePageText();
     handleAccordionJstrading(); 
     handleFooterMobileAccordiong(); 
+    appendAttrToLasListElementBootcamp();
+     
+
 });
+
+//append a href to last li element of bootcamp list php loop
+function appendAttrToLasListElementBootcamp() {
+    const myUrl = 'https://google.com';
+    const innerText = 'Click here for the programs terms & conditions';
+    jQuery("#bootcamp-list li:last-child")
+    .append(
+        `<li class="item">
+            <span class="icon"> &#10003; </span>
+            <a class="js-link" href="${myUrl}">
+                ${innerText}
+            </a>
+        </li>`
+    );
+}
 
 // handle scroll fixed nav menu
 function scrollEvent() {
@@ -134,5 +152,3 @@ AOS.init({
     duration: 1200,
   })
 
-
-  

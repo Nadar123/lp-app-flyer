@@ -35,6 +35,16 @@
     acf_add_options_page();
   }
 
+  //TODO FIX THIS FUNCTION !!!
+  function the5ers_adjust_query($query) {
+    if( !is_admin() && is_post_type_archive('trader-interviews') && $query->is_main_query() ) {
+      $query->set('post_per_page', '5');
+      $query->set('orderby', 'meta_vlaue_num');
+      $query->set('order', 'ASC');
+
+    }
+  }
+  add_action('pre_get_posts', 'the5ers_adjust_query');
 
   // function fivers_features() {
   //   register_nav_menu('headerMenu', 'Header Menu');

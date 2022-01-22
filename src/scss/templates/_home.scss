@@ -942,7 +942,7 @@
                 width: 100%
             }
 
- /* HOME PAGE CONTACT FORM */
+             /* HOME PAGE CONTACT FORM */
 
             .wpcf7-form.init {
                 .form-group {
@@ -1063,12 +1063,14 @@
                 width: 85%;
                 text-align: center;
                 margin: auto;
+            }
+            .addres-wrapper__inner {
 
-                &__inner {
-                    h3 {
-                        font-size: 23px;
-                        line-height: 28px;
-                    }
+                h4 {
+                    font-size: 23px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    padding: 0;
                 }
             }
         }

@@ -12577,10 +12577,12 @@ textarea.form-control-lg {
     text-align: center;
     margin: auto;
   }
-  .contact-us-wrapper .contact-wrapper .addres-wrapper__inner h3, .contact-us-wrapper .contact-wrapper .addres-wrapper__inner .h3 {
-    font-size: 23px;
-    line-height: 28px;
-  }
+}
+.contact-us-wrapper .contact-wrapper .addres-wrapper .addres-wrapper__inner h4, .contact-us-wrapper .contact-wrapper .addres-wrapper .addres-wrapper__inner .h4 {
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 600;
+  padding: 0;
 }
 
 #about-page.page-wrapper .page-wrapper__banner {
@@ -13663,6 +13665,438 @@ textarea.form-control-lg {
   font-weight: 500;
   line-height: 22px;
   padding: 0 0 1rem 0;
+}
+
+#bootcamp-page .page-wrapper__banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 55vh;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .page-wrapper__banner {
+    background-position: right;
+    height: 30vh;
+    margin: 4rem 0 0 0;
+    padding: 0 10px;
+  }
+}
+#bootcamp-page .page-wrapper__banner__content {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .page-wrapper__banner__content {
+    width: 100%;
+  }
+}
+#bootcamp-page .page-wrapper__banner__content h1.title, #bootcamp-page .page-wrapper__banner__content .title.h1 {
+  padding: 16rem 0 0 0;
+  font-size: 65px;
+  line-height: 55px;
+  font-weight: 900;
+  color: #fff;
+  color: gold;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .page-wrapper__banner__content h1.title, #bootcamp-page .page-wrapper__banner__content .title.h1 {
+    font-size: 22px;
+    line-height: 29px;
+    padding: 8rem 10px 0 0;
+  }
+}
+#bootcamp-page .page-wrapper__banner__content p.option-text-under-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px 0;
+  width: 65%;
+  margin: auto;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .page-wrapper__banner__content p.option-text-under-title {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 1rem 2rem 0 0;
+  }
+}
+#bootcamp-page .bootcamp-wrapper .bootcamp-wrapper__content {
+  width: 65%;
+  margin: auto;
+  padding: 4rem 0;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .text-wrappper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .text-wrappper p.inner {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 600;
+  margin: 0 4rem;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .text-wrappper p.inner .min-height {
+  display: inline-block;
+  min-height: 135px;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .text-wrappper b {
+  font-weight: 800;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .text-wrappper .second-text {
+  padding: 2rem 0 0 0;
+  display: inline-block;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .text-wrappper .second-text .bold {
+  display: inline;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .bootcamp-button-wrapper {
+  text-align: center;
+  padding: 3rem 0;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .bootcamp-button-wrapper a {
+  background-color: #1a1e41;
+  border: 1px solid #000;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 600;
+  border-radius: 8px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  padding: 10px 34px;
+  transition: all 0.2s ease-in-out;
+}
+#bootcamp-page .bootcamp-wrapper .inner-content .bootcamp-button-wrapper a:hover {
+  color: #1a1e41;
+  background-color: transparent;
+}
+#bootcamp-page .bootcamp-wrapper__warning {
+  background: #1a1e41;
+  text-align: center;
+  color: #fff;
+  padding: 4rem 0;
+}
+#bootcamp-page .bootcamp-wrapper__warning .title {
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+#bootcamp-page .bootcamp-wrapper__warning .sub-title {
+  padding: 2rem 0;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 900;
+  color: gold;
+  width: 65%;
+  margin: auto;
+}
+#bootcamp-page .challenge-stages-wrapper {
+  padding: 4rem 0;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container {
+  position: relative;
+  width: 65%;
+  margin: 10px auto;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .challenge-stages-wrapper .accordion-container {
+    width: 100%;
+    display: block;
+  }
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .accordion-container > h2, #bootcamp-page .challenge-stages-wrapper .accordion-container .accordion-container > .h2 {
+  text-align: center;
+  color: #1a1e41;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .set {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .challenge-stages-wrapper .accordion-container .set {
+    width: 100%;
+  }
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .set > a {
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: #1a1e41;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .challenge-stages-wrapper .accordion-container .set > a {
+    text-align: left;
+  }
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .fa-minus {
+  display: none;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .active .fa-plus {
+  color: #1a1e41;
+  display: none;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .active .fa-minus {
+  color: #1a1e41;
+  display: inline-block;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .content {
+  background-color: #e4e4e4;
+  display: none;
+  text-align: left;
+  padding: 2rem 1rem;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .content p {
+  margin: 0;
+  color: #1a1e41;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .content ul {
+  padding: 2rem 0;
+  list-style: disc;
+  -webkit-padding-start: 60px;
+          padding-inline-start: 60px;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .content table {
+  width: 100%;
+  border: 1px solid #fff;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .content table tbody tr {
+  background-color: #1a1e41;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  min-height: 50px;
+  height: 50px;
+  color: #fff;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .content table tbody th {
+  border-right: 1px solid #fff;
+  padding: 16px;
+  font-weight: 700;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .content table tbody td {
+  border-right: 1px solid #fff;
+  height: 40px;
+  padding: 16px;
+}
+#bootcamp-page .challenge-stages-wrapper .accordion-container .content table tbody td b {
+  padding: 0 5px;
+}
+#bootcamp-page .challenge-stages-wrapper .bootcamp-button-wrapper {
+  text-align: center;
+  padding: 3rem 0;
+}
+#bootcamp-page .challenge-stages-wrapper .bootcamp-button-wrapper a {
+  background-color: #1a1e41;
+  border: 1px solid #000;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 600;
+  border-radius: 8px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  padding: 10px 34px;
+  transition: all 0.2s ease-in-out;
+}
+#bootcamp-page .challenge-stages-wrapper .bootcamp-button-wrapper a:hover {
+  color: #1a1e41;
+  background-color: transparent;
+}
+#bootcamp-page .specifications-wrapper {
+  padding: 4rem 0;
+  width: 100%;
+  height: auto;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bootcamp-page .specifications-wrapper__inner {
+  width: 65%;
+  margin: auto;
+}
+#bootcamp-page .specifications-wrapper__inner h3, #bootcamp-page .specifications-wrapper__inner .h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.035px;
+  padding: 0 0 2rem 0;
+}
+#bootcamp-page .specifications-wrapper__inner ul li {
+  color: #fff;
+  padding: 12px 0;
+}
+#bootcamp-page .specifications-wrapper__inner ul li .icon {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  color: #1a1e41;
+  padding: 2px;
+  background-color: #01d0c5;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+#bootcamp-page .specifications-wrapper__inner ul li a.js-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+#bootcamp-page .faq-bootcamp-wrapper {
+  padding: 4rem 0;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container {
+  position: relative;
+  width: 65%;
+  margin: 10px auto;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .faq-bootcamp-wrapper .accordion-container {
+    width: 100%;
+    display: block;
+  }
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .accordion-container > h2, #bootcamp-page .faq-bootcamp-wrapper .accordion-container .accordion-container > .h2 {
+  text-align: center;
+  color: #1a1e41;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .set {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .faq-bootcamp-wrapper .accordion-container .set {
+    width: 100%;
+  }
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .set > a {
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: #1a1e41;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+@media (max-width: 767.98px) {
+  #bootcamp-page .faq-bootcamp-wrapper .accordion-container .set > a {
+    text-align: left;
+  }
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .fa-minus {
+  display: none;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .active .fa-plus {
+  color: #1a1e41;
+  display: none;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .active .fa-minus {
+  color: #1a1e41;
+  display: inline-block;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .content {
+  background-color: #e4e4e4;
+  display: none;
+  text-align: left;
+  padding: 2rem 1rem;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .content p {
+  margin: 0;
+  color: #1a1e41;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .content ul {
+  padding: 2rem 0;
+  list-style: disc;
+  -webkit-padding-start: 60px;
+          padding-inline-start: 60px;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .content table {
+  width: 100%;
+  border: 1px solid #fff;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .content table tbody tr {
+  background-color: #1a1e41;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  min-height: 50px;
+  height: 50px;
+  color: #fff;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .content table tbody th {
+  border-right: 1px solid #fff;
+  padding: 16px;
+  font-weight: 700;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .content table tbody td {
+  border-right: 1px solid #fff;
+  height: 40px;
+  padding: 16px;
+}
+#bootcamp-page .faq-bootcamp-wrapper .accordion-container .content table tbody td b {
+  padding: 0 5px;
+}
+#bootcamp-page .faq-bootcamp-wrapper .bootcamp-button-wrapper {
+  text-align: center;
+  padding: 3rem 0;
+}
+#bootcamp-page .faq-bootcamp-wrapper .bootcamp-button-wrapper a {
+  background-color: #1a1e41;
+  border: 1px solid #000;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 600;
+  border-radius: 8px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  padding: 10px 34px;
+  transition: all 0.2s ease-in-out;
+}
+#bootcamp-page .faq-bootcamp-wrapper .bootcamp-button-wrapper a:hover {
+  color: #1a1e41;
+  background-color: transparent;
+}
+#bootcamp-page .trustpilot-widget {
+  padding: 6rem 0;
+  width: 65%;
+  margin: auto;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #3a3034 67%, #979794 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: textclip 8s linear infinite;
+          animation: textclip 8s linear infinite;
+  display: inline-block;
 }
 
 .header {

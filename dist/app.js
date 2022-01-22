@@ -17057,7 +17057,15 @@ jQuery(window).on('load', function ($) {
   handleTableHomePageText();
   handleAccordionJstrading();
   handleFooterMobileAccordiong();
-}); // handle scroll fixed nav menu
+  appendAttrToLasListElementBootcamp();
+}); //append a href to last li element of bootcamp list php loop
+
+function appendAttrToLasListElementBootcamp() {
+  var myUrl = 'https://google.com';
+  var innerText = 'Click here for the programs terms & conditions';
+  jQuery("#bootcamp-list li:last-child").append("<li class=\"item\">\n            <span class=\"icon\"> &#10003; </span>\n            <a class=\"js-link\" href=\"".concat(myUrl, "\">\n                ").concat(innerText, "\n            </a>\n        </li>"));
+} // handle scroll fixed nav menu
+
 
 function scrollEvent() {
   $(window).on('scroll', function () {

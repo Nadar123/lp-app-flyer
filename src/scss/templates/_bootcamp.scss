@@ -1,0 +1,509 @@
+#bootcamp-page {
+
+    .page-wrapper__banner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 55vh;
+        @include media-breakpoint-down(md) {
+            background-position: right;
+            height: 30vh;
+            margin: 4rem 0 0 0;
+            padding: 0 10px;
+        }
+
+        &__content {
+            width: 65%;
+            margin: auto;
+            text-align: center;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+            h1.title {
+                padding: 16rem 0 0 0;
+                font-size: 65px;
+                line-height: 55px;
+                font-weight: 900;
+                color: #fff;
+                color: gold;
+                @include media-breakpoint-down(md) {
+                    font-size: 22px;
+                    line-height: 29px;
+                    padding: 8rem 10px 0 0 ;
+                }
+            }
+            p.option-text-under-title {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                padding: 10px 0;
+                width: 65%;
+                margin: auto;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding: 1rem 2rem 0 0;
+                }
+            }
+        }
+    }
+
+    .bootcamp-wrapper {
+        .bootcamp-wrapper__content {
+            width: 65%;
+            margin: auto;
+            padding: 4rem 0;
+        }
+        .inner-content{
+
+            .text-wrappper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                p.inner {
+                    font-size: 24px;
+                    line-height: 35px;
+                    font-weight: 600;
+                    margin: 0 4rem;
+
+                    .min-height {
+                        display: inline-block;
+                        min-height: 135px;
+                    }
+
+                }
+                b {
+                    font-weight: 800;
+                }
+                .second-text {
+                    padding: 2rem 0 0 0;
+                    display: inline-block;
+                    .bold {
+                        display: inline;
+                    }
+                }
+            }
+
+            .bootcamp-button-wrapper {
+                text-align: center;
+                padding: 3rem 0;
+
+                a {
+                    background-color: #1a1e41;
+                    border: 1px solid #000;
+                    font-size: 28px;
+                    line-height: 35px;
+                    font-weight: 600;
+                    border-radius: 8px;
+                    letter-spacing: 1.5px;
+                    color: #fff;
+                    padding: 10px 34px;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        color: #1a1e41;
+                        background-color: transparent;
+
+                    }
+                }
+            } 
+        }
+        &__warning {
+            background: #1a1e41;
+            text-align: center;
+            color: #fff;
+            padding: 4rem 0;
+
+            .title {
+                font-size: 44px;
+                line-height: 50px;
+                font-weight: 800;
+                letter-spacing: 1px;
+            }
+
+            .sub-title {
+                padding: 2rem 0;
+                font-size: 60px;
+                line-height: 72px;
+                font-weight: 900;
+                color: gold;
+                width: 65%;
+                margin: auto;
+            }
+        } 
+    }
+
+    .challenge-stages-wrapper {
+        padding: 4rem 0;
+        .accordion-container {
+            position: relative;
+            width: 65%;
+            margin: 10px auto;
+    
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                display: block;
+    
+            }
+        
+            .accordion-container > h2{
+                text-align: center;
+                color: #1a1e41;
+                padding-bottom: 5px;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+        
+            .set{
+                position: relative;
+                width: 100%;
+                height: auto;
+    
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+    
+                }
+    
+            }
+        
+            .set > a {
+                font-size: 20px;
+                line-height: 28px;
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+                color: #1a1e41;
+                font-weight: 600;
+                text-transform: uppercase;
+                -webkit-transition:all 0.2s linear;
+                -moz-transition:all 0.2s linear;
+                transition:all 0.2s linear;
+                @include media-breakpoint-down(md) {
+                    text-align: left;
+                    
+                }
+            }
+        
+            .fa-minus {
+                display: none;
+            }
+        
+            .active {
+              .fa-plus {
+                  color: #1a1e41;
+                  display: none;
+              }
+              .fa-minus {
+                color: #1a1e41;
+                  display: inline-block;
+              }
+            }
+            
+            .content {
+                background-color: #e4e4e4;
+                display:none;
+                text-align: left;
+                padding: 2rem 1rem;
+                p {
+                    margin: 0;
+                   color: #1a1e41;
+                   font-size: 16px;
+                   font-weight: 500;
+                   line-height: 28px;
+                }
+                ul {
+                    padding: 2rem 0;
+                    list-style: disc;
+                    padding-inline-start: 60px;
+                }
+
+                table {
+                    width: 100%;
+                    border: 1px solid #fff;
+
+                    tbody {
+                        tr {
+                            background-color: #1a1e41;
+                            border-right: 1px solid #fff;
+                            border-bottom: 1px solid #fff;
+                            min-height: 50px;
+                            height: 50px;
+                            color: #fff;
+                        }
+
+                        th {
+                            border-right: 1px solid #fff;
+                            padding: 16px;
+                            font-weight: 700;
+                        }
+
+                        td {
+                            border-right: 1px solid #fff;
+                            height: 40px;
+                            padding: 16px;
+
+                            b {
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bootcamp-button-wrapper {
+            text-align: center;
+            padding: 3rem 0;
+
+            a {
+                background-color: #1a1e41;
+                border: 1px solid #000;
+                font-size: 28px;
+                line-height: 35px;
+                font-weight: 600;
+                border-radius: 8px;
+                letter-spacing: 1.5px;
+                color: #fff;
+                padding: 10px 34px;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    color: #1a1e41;
+                    background-color: transparent;
+
+                }
+            }
+        }
+    }
+
+    .specifications-wrapper {
+        padding: 4rem 0;
+        width: 100%;
+        height: auto;
+        background-position: center, center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__inner {
+            width: 65%;
+            margin: auto;
+
+            h3 {
+                color: #fff;
+                font-size: 36px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: .035px;
+                padding: 0 0 2rem 0;
+            }
+
+            ul {
+                li {
+                    color: #fff;
+                    padding: 12px 0;
+                    .icon {
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        color: #fff;
+                        color: #1a1e41;
+                        padding: 2px;
+                        background-color: #01d0c5; 
+                        border-radius: 50%;
+                        margin: 0 10px 0 0;
+                    }
+                    a.js-link {
+                        &:hover {
+                            color: #fff;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+    .faq-bootcamp-wrapper {
+        padding: 4rem 0;
+    
+        .accordion-container {
+            position: relative;
+            width: 65%;
+            margin: 10px auto;
+    
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                display: block;
+    
+            }
+        
+            .accordion-container > h2{
+                text-align: center;
+                color: #1a1e41;
+                padding-bottom: 5px;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+        
+            .set{
+                position: relative;
+                width: 100%;
+                height: auto;
+    
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+    
+                }
+    
+            }
+        
+            .set > a {
+                font-size: 20px;
+                line-height: 28px;
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+                color: #1a1e41;
+                font-weight: 600;
+                text-transform: uppercase;
+                -webkit-transition:all 0.2s linear;
+                -moz-transition:all 0.2s linear;
+                transition:all 0.2s linear;
+                @include media-breakpoint-down(md) {
+                    text-align: left;
+                    
+                }
+            }
+        
+            .fa-minus {
+                display: none;
+            }
+        
+            .active {
+              .fa-plus {
+                  color: #1a1e41;
+                  display: none;
+              }
+              .fa-minus {
+                color: #1a1e41;
+                  display: inline-block;
+              }
+            }
+            
+            .content {
+                background-color: #e4e4e4;
+                display:none;
+                text-align: left;
+                padding: 2rem 1rem;
+                p {
+                    margin: 0;
+                   color: #1a1e41;
+                   font-size: 16px;
+                   font-weight: 500;
+                   line-height: 28px;
+                }
+                ul {
+                    padding: 2rem 0;
+                    list-style: disc;
+                    padding-inline-start: 60px;
+                }
+    
+                table {
+                    width: 100%;
+                    border: 1px solid #fff;
+    
+                    tbody {
+                        tr {
+                            background-color: #1a1e41;
+                            border-right: 1px solid #fff;
+                            border-bottom: 1px solid #fff;
+                            min-height: 50px;
+                            height: 50px;
+                            color: #fff;
+                        }
+    
+                        th {
+                            border-right: 1px solid #fff;
+                            padding: 16px;
+                            font-weight: 700;
+                        }
+    
+                        td {
+                            border-right: 1px solid #fff;
+                            height: 40px;
+                            padding: 16px;
+    
+                            b {
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .bootcamp-button-wrapper {
+            text-align: center;
+            padding: 3rem 0;
+    
+            a {
+                background-color: #1a1e41;
+                border: 1px solid #000;
+                font-size: 28px;
+                line-height: 35px;
+                font-weight: 600;
+                border-radius: 8px;
+                letter-spacing: 1.5px;
+                color: #fff;
+                padding: 10px 34px;
+                transition: all 0.2s ease-in-out;
+    
+                &:hover {
+                    color: #1a1e41;
+                    background-color: transparent;
+    
+                }
+            }
+        } 
+    }
+    .trustpilot-widget {
+        padding: 6rem 0;
+        width: 65%;
+        margin: auto; 
+    }
+
+    
+}
+
+.animate-charcter {
+   text-transform: uppercase;
+   background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #3a3034 67%,
+    #979794 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+  display: inline-block;
+}
+
+// @keyframes textclip {
+//   to {
+//     background-position: 200% center;
+//   }
+// }
+

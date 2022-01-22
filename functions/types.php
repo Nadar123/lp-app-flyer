@@ -88,9 +88,13 @@ if ( ! function_exists('fivers_forex_post_types') ) {
       'show_in_nav_menus'     => true,
       'can_export'            => true,
       'has_archive'           => true,
+      'rewrite'               => array('slug' => 'advanced-forex'),
       'exclude_from_search'   => false,
       'publicly_queryable'    => true,
       'capability_type'       => 'page',
+      'show_in_rest'        => true,
+         
+      'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'advanced forex', $args );
 
@@ -149,9 +153,13 @@ if ( ! function_exists('fivers_trader_post_types') ) {
       'show_in_nav_menus'     => true,
       'can_export'            => true,
       'has_archive'           => true,
+      'rewrite'               => array('slug' => 'trader-interviews'),
       'exclude_from_search'   => false,
       'publicly_queryable'    => true,
       'capability_type'       => 'page',
+      'show_in_rest'        => true,
+         
+      'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'Trader Interviews', $args );
 
@@ -168,9 +176,9 @@ if ( ! function_exists('fivers_trading_room_post_types') ) {
   function fivers_trading_room_post_types() {
 
     $labels = array(
-      'name'                  => _x( 'trading Room', 'Post Type General Name', 'the5ers' ),
+      'name'                  => _x( 'trading room', 'Post Type General Name', 'the5ers' ),
       'singular_name'         => _x( 'trading room', 'Post Type Singular Name', 'the5ers' ),
-      'menu_name'             => __( 'trading room', 'the5ers' ),
+      'menu_name'             => __( 'trading Room', 'the5ers' ),
       'name_admin_bar'        => __( 'trading room', 'the5ers' ),
       'archives'              => __( 'Item Archives', 'the5ers' ),
       'attributes'            => __( 'Item Attributes', 'the5ers' ),
@@ -210,11 +218,16 @@ if ( ! function_exists('fivers_trading_room_post_types') ) {
       'show_in_nav_menus'     => true,
       'can_export'            => true,
       'has_archive'           => true,
+      'rewrite'               => array('slug' => 'trader-room'),
+
       'exclude_from_search'   => false,
       'publicly_queryable'    => true,
       'capability_type'       => 'page',
+      'show_in_rest'        => true,
+         
+      'taxonomies'          => array( 'category' ),
     );
-    register_post_type( 'trading room', $args);
+    register_post_type( 'trading Room', $args);
 
   }
   add_action( 'init', 'fivers_trading_room_post_types', 0 );
@@ -270,9 +283,13 @@ if ( ! function_exists('fivers_trading_psychology_post_types') ) {
       'show_in_nav_menus'     => true,
       'can_export'            => true,
       'has_archive'           => true,
+      'rewrite'               => array('slug' => 'trader-psychology'),
       'exclude_from_search'   => false,
       'publicly_queryable'    => true,
       'capability_type'       => 'page',
+      'show_in_rest'        => true,
+         
+      'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'trading psychology', $args);
 
@@ -331,9 +348,13 @@ if ( ! function_exists('fivers_trading_strategy_post_types') ) {
       'show_in_nav_menus'     => true,
       'can_export'            => true,
       'has_archive'           => true,
+      'rewrite'               => array('slug' => 'trader-strategy'),
       'exclude_from_search'   => false,
       'publicly_queryable'    => true,
       'capability_type'       => 'page',
+      'show_in_rest'        => true,
+         
+      'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'trade strategy', $args);
 

@@ -95,6 +95,20 @@
                 "operator": "==",
                 "value": "view\/terms-conditions.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "view\/bootcamp.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "traderinterviews"
+            }
         ]
     ],
     "menu_order": 0,
@@ -106,5 +120,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1642583703
+    "modified": 1642853870
 }
