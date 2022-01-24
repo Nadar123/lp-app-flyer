@@ -15,6 +15,14 @@
                 <?php the_author_posts_link(); ?> on 
                 <?php the_time('n.j.y'); ?> in 
                 <?php echo get_the_category_list(', '); ?></span>
+                <?php $tags = get_tags(); ?>
+                    <div class="tags">
+                        <?php foreach ( $tags as $tag ) : ?>
+                            <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">
+                                <?php echo $tag->name; ?>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
         </div>
         <h1 style="font-size: 45px;"> 
         <a href="<?php the_permalink(); ?>">

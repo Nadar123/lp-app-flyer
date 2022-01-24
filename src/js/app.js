@@ -23,10 +23,8 @@ jQuery(window).on('load', function($) {
     handleAccordionJstrading(); 
     handleFooterMobileAccordiong(); 
     appendAttrToLasListElementBootcamp();
-     
-
+    openTableOfContentPost();
 });
-
 //append a href to last li element of bootcamp list php loop
 function appendAttrToLasListElementBootcamp() {
     const myUrl = 'https://google.com';
@@ -152,3 +150,10 @@ AOS.init({
     duration: 1200,
   })
 
+//table of content
+function openTableOfContentPost() {  
+    $('.uagb-toc__title').on('click', function(e) {
+        e.preventDefault();
+      $('.uagb-toc__list').slideToggle("fast");
+    });
+}

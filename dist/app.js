@@ -17058,6 +17058,7 @@ jQuery(window).on('load', function ($) {
   handleAccordionJstrading();
   handleFooterMobileAccordiong();
   appendAttrToLasListElementBootcamp();
+  openTableOfContentPost();
 }); //append a href to last li element of bootcamp list php loop
 
 function appendAttrToLasListElementBootcamp() {
@@ -17176,7 +17177,14 @@ function handleInitVideo() {
 
 _node_modules_aos_dist_aos__WEBPACK_IMPORTED_MODULE_1___default().init({
   duration: 1200
-});
+}); //table of content
+
+function openTableOfContentPost() {
+  $('.uagb-toc__title').on('click', function (e) {
+    e.preventDefault();
+    $('.uagb-toc__list').slideToggle("fast");
+  });
+}
 
 /***/ }),
 

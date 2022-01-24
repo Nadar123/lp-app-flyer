@@ -9,7 +9,7 @@ get_header();
 <?php get_template_part('/banner/banner') ?>
 
 
-<div class="main-wrapper" style="width: 65%; margin: auto">
+<div class="main-wrapper">
     <!--OPTION TWO -->
     <h1 style="padding: 8rem 0 0 0;" ><?php the_archive_title(); ?></h1>
     <h3><?php the_archive_description(); ?></h3> archive-traderinterviews
@@ -22,7 +22,16 @@ get_header();
             <span> Post by 
                 <?php the_author_posts_link(); ?> on 
                 <?php the_time('n.j.y'); ?> in 
-                <?php echo get_the_category_list(', '); ?></span>
+                <?php echo get_the_category_list(', '); ?>
+            </span>
+            <div class="tags">
+                <?php $tags = get_tags(); ?>
+                <?php foreach ( $tags as $tag ) : ?>
+                    <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">
+                        <?php echo $tag->name; ?>
+                    </a>
+                <?php endforeach; ?>
+            </div>
         </div>
         <h1 style="font-size: 45px;"> 
         <a href="<?php the_permalink(); ?>">

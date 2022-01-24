@@ -41,9 +41,9 @@ add_action( 'init', 'field_stater_wordpress_taxonomy', 0 );
 /** 
  *advanced forex post 
  */
-if ( ! function_exists('fivers_forex_post_types') ) {
+if ( ! function_exists('the5ers_forex_post_types') ) {
   // Register Custom Post Type
-  function fivers_forex_post_types() {
+  function the5ers_forex_post_types() {
 
     $labels = array(
       'name'                  => _x( 'advanced forex', 'Post Type General Name', 'the5ers' ),
@@ -94,21 +94,21 @@ if ( ! function_exists('fivers_forex_post_types') ) {
       'capability_type'       => 'page',
       'show_in_rest'        => true,
          
-      'taxonomies'          => array( 'category' ),
+      'taxonomies'          => array( 'category', 'post_tag' ),
     );
     register_post_type( 'advanced forex', $args );
 
   }
-  add_action( 'init', 'fivers_forex_post_types', 0 );
+  add_action( 'init', 'the5ers_forex_post_types', 0 );
 }
 
 /** 
  *trader interviews post 
  */
 
-if ( ! function_exists('fivers_trader_post_types') ) {
+if ( ! function_exists('the5ers_trader_post_types') ) {
   // Register Custom Post Type
-  function fivers_trader_post_types() {
+  function the5ers_trader_post_types() {
 
     $labels = array(
       'name'                  => _x( 'trader interviews', 'Post Type General Name', 'the5ers' ),
@@ -159,21 +159,21 @@ if ( ! function_exists('fivers_trader_post_types') ) {
       'capability_type'       => 'page',
       'show_in_rest'        => true,
          
-      'taxonomies'          => array( 'category' ),
+      'taxonomies'          => array( 'category', 'post_tag' ),
     );
     register_post_type( 'Trader Interviews', $args );
 
   }
-  add_action( 'init', 'fivers_trader_post_types', 0 );
+  add_action( 'init', 'the5ers_trader_post_types', 0 );
 }
 
 
 /** 
  *trading_room post 
  */
-if ( ! function_exists('fivers_trading_room_post_types') ) {
+if ( ! function_exists('the5ers_trading_room_post_types') ) {
   // Register Custom Post Type
-  function fivers_trading_room_post_types() {
+  function the5ers_trading_room_post_types() {
 
     $labels = array(
       'name'                  => _x( 'trading room', 'Post Type General Name', 'the5ers' ),
@@ -225,20 +225,20 @@ if ( ! function_exists('fivers_trading_room_post_types') ) {
       'capability_type'       => 'page',
       'show_in_rest'        => true,
          
-      'taxonomies'          => array( 'category' ),
+      'taxonomies'          => array( 'category', 'post_tag' ),
     );
     register_post_type( 'trading Room', $args);
 
   }
-  add_action( 'init', 'fivers_trading_room_post_types', 0 );
+  add_action( 'init', 'the5ers_trading_room_post_types', 0 );
 }
 
 /** 
  *trading_psychology post 
  */
-if ( ! function_exists('fivers_trading_psychology_post_types') ) {
+if ( ! function_exists('the5ers_trading_psychology_post_types') ) {
   // Register Custom Post Type
-  function fivers_trading_psychology_post_types() {
+  function the5ers_trading_psychology_post_types() {
 
     $labels = array(
       'name'                  => _x( 'trading psychology', 'Post Type General Name', 'the5ers' ),
@@ -289,21 +289,21 @@ if ( ! function_exists('fivers_trading_psychology_post_types') ) {
       'capability_type'       => 'page',
       'show_in_rest'        => true,
          
-      'taxonomies'          => array( 'category' ),
+      'taxonomies'          => array( 'category', 'post_tag'),
     );
     register_post_type( 'trading psychology', $args);
 
   }
-  add_action( 'init', 'fivers_trading_psychology_post_types', 0 );
+  add_action( 'init', 'the5ers_trading_psychology_post_types', 0 );
 }
 
 /** 
  *trading_strategy post 
  */
 
-if ( ! function_exists('fivers_trading_strategy_post_types') ) {
+if ( ! function_exists('the5ers_trading_strategy_post_types') ) {
   // Register Custom Post Type
-  function fivers_trading_strategy_post_types() {
+  function the5ers_trading_strategy_post_types() {
 
     $labels = array(
       'name'                  => _x( 'trade strategy', 'Post Type General Name', 'the5ers' ),
@@ -354,10 +354,10 @@ if ( ! function_exists('fivers_trading_strategy_post_types') ) {
       'capability_type'       => 'page',
       'show_in_rest'        => true,
          
-      'taxonomies'          => array( 'category' ),
+      'taxonomies'          => array( 'category', 'post_tag'),
     );
     register_post_type( 'trade strategy', $args);
 
   }
-  add_action( 'init', 'fivers_trading_strategy_post_types', 0 );
+  add_action( 'init', 'the5ers_trading_strategy_post_types', 0 );
 }
