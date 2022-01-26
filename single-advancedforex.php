@@ -31,7 +31,7 @@
                               <?php the_post_thumbnail(); ?>
                           </div>
                               <div class="content-post-wrapper">
-                                  <?php the_content(); ?></p>                        
+                                  <?php the_content(); ?></p> 
                               </div> 
                       </section>
                   </div>
@@ -39,7 +39,12 @@
               <?php endwhile; ?>
 
               <div class="comments-wrapper-single">
-                  h3commets
+                  <!--
+                <?//php if(comments_open() || get_comments_number()) : ?>
+                    <?//php comments_template(); ?>
+                <?//php endif; ?>
+                -->
+
               </div>
 
               <div class="the5ers_related_posts">
