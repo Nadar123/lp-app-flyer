@@ -17059,13 +17059,14 @@ jQuery(window).on('load', function ($) {
   handleFooterMobileAccordiong();
   appendAttrToLasListElementBootcamp();
   openTableOfContentPost();
-}); //append a href to last li element of bootcamp list php loop
+  ScrollProgressBar();
+}); //append a href to last li element of bootcamp list php loop //
 
 function appendAttrToLasListElementBootcamp() {
   var myUrl = 'https://google.com';
   var innerText = 'Click here for the programs terms & conditions';
   jQuery("#bootcamp-list li:last-child").append("<li class=\"item\">\n            <span class=\"icon\"> &#10003; </span>\n            <a class=\"js-link\" href=\"".concat(myUrl, "\">\n                ").concat(innerText, "\n            </a>\n        </li>"));
-} // handle scroll fixed nav menu
+} // handle scroll fixed nav menu //
 
 
 function scrollEvent() {
@@ -17076,7 +17077,7 @@ function scrollEvent() {
       $('.header').removeClass('active');
     }
   });
-} // handle respoisve nav menu
+} // handle respoisve nav menu //
 
 
 function moblieNavBar() {
@@ -17102,13 +17103,13 @@ function moblieNavBar() {
       navToggler.click();
     }
   }
-} //open tabs home page
+} //open tabs home page //
 
 
 function handleTabs() {
   $('.tabs-stage div').hide();
   $('.tabs-stage div:first').show();
-  $('.tabs-nav li:first').addClass('tab-active'); // Change tab class and display content
+  $('.tabs-nav li:first').addClass('tab-active'); // Change tab class and display content //
 
   $('.tabs-nav a').on('click', function (event) {
     event.preventDefault();
@@ -17117,18 +17118,17 @@ function handleTabs() {
     $('.tabs-stage div').hide();
     $($(this).attr('href')).show();
   });
-} //handle Table Home Page tr Text
+} //handle Table Home Page tr Text //
 
 
 function handleTableHomePageText() {
   $('.title-wrap').on('click', function (e) {
     e.preventDefault();
-    $(this).parent().find('.hidden-text').toggleClass('open'); // $(this).parent().next('.hidden-text').removeClass('open');
-
+    $(this).parent().find('.hidden-text').toggleClass('open');
     $('.hidden-text').next().slideToggle('slow');
     $(this).find('svg.svg-inline--fa').toggleClass('rotate');
   });
-} // handle Accordion trading home page tade experience section 
+} // handle Accordion trading home page tade experience section //
 
 
 function handleAccordionJstrading() {
@@ -17148,7 +17148,7 @@ function handleAccordionJstrading() {
       $(this).siblings(".content").slideDown(200);
     }
   });
-} // handle footer Accordion
+} // handle footer Accordion //
 
 
 function handleFooterMobileAccordiong() {
@@ -17161,7 +17161,7 @@ function handleFooterMobileAccordiong() {
       jQuery(this).find('.sub-menu').slideToggle("slow");
     });
   }
-} //init video about page
+} //init video about page //
 
 
 function handleInitVideo() {
@@ -17177,12 +17177,23 @@ function handleInitVideo() {
 
 _node_modules_aos_dist_aos__WEBPACK_IMPORTED_MODULE_1___default().init({
   duration: 1200
-}); //table of content
+}); //table of content post post-type pages //
 
 function openTableOfContentPost() {
+  // $('.uagb-toc__title').append('<i class="fas fa-table"></i>');
   $('.uagb-toc__title').on('click', function (e) {
     e.preventDefault();
     $('.uagb-toc__list').slideToggle("fast");
+    $(this).toggleClass('rotate');
+  });
+} // progress bar fix on botton: 0px //
+
+
+function ScrollProgressBar() {
+  $(document).on('scroll resize', function () {
+    var $d = $(document),
+        $w = $(window);
+    $('#scroll-bar').width($d.scrollTop() / ($d.height() - $w.height()) * $d.height() + 'px');
   });
 }
 

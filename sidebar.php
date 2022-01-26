@@ -22,10 +22,10 @@ $query = new WP_Query($all_posts);
 while($query -> have_posts()) : $query -> the_post();
 ?>
 
-<div class="post-type-the5ers">
-    <a href="<?php the_permalink()?>">
-        <h2><?php the_title(); ?> </h2>
+<div class="sidebar-post-type-the5ers">
+    <a class="post-link" href="<?php the_permalink()?>">
         <div><?php the_post_thumbnail('recent_posts'); ?></div>
+        <p class="post-text"><?php the_title(); ?> </p>
     </a>
 </div>
 

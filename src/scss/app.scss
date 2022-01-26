@@ -7,9 +7,10 @@
 // @import '~@fortawesome/fontawesome-free/scss/brands'; 
 
 // @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap');
-// @import '~font-awesome/css/font-awesome.css';
+//@import '~font-awesome/css/font-awesome.css';
 
 @import './colors';
+/*T e m p l a t e s */
 @import './templates/home';
 @import './templates/about';
 @import './templates/contact';
@@ -19,17 +20,20 @@
 @import './templates/timeLine.scss';
 @import './templates/terms-conditions.scss';
 @import './templates/bootcamp.scss';
+@import './templates/archivesPages.scss';
 
-
+/*C o m p o n e n t s */
 @import './components/header';
 @import './components/footer';
 @import './components/tables';
+@import './components/table-of-content';
+@import './components/sidebar';
 
 
-*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
-    all: unset;
-    display: revert;
-}
+// *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+//     all: unset;
+//     display: revert;
+// }
 /* Preferred box-sizing value */
 *,
 *::before,

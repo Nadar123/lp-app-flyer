@@ -50,9 +50,7 @@
     
     <?php endwhile; ?>
 
-    <div class="pag-link" style="padding: 1rem 0"> 
-        <?php echo paginate_links(); ?>
-    </div>
+    <?php  the5ers_related_posts(); ?>
     
 </div>
 

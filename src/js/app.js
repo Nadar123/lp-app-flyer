@@ -9,9 +9,6 @@ window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js');
 require('bootstrap');
 
-
-
-
 jQuery(window).on('load', function($) {
     handleInitVideo();
     library.add(fas, far, fab); 
@@ -24,8 +21,12 @@ jQuery(window).on('load', function($) {
     handleFooterMobileAccordiong(); 
     appendAttrToLasListElementBootcamp();
     openTableOfContentPost();
+    ScrollProgressBar();
+   
+
 });
-//append a href to last li element of bootcamp list php loop
+
+//append a href to last li element of bootcamp list php loop //
 function appendAttrToLasListElementBootcamp() {
     const myUrl = 'https://google.com';
     const innerText = 'Click here for the programs terms & conditions';
@@ -40,7 +41,7 @@ function appendAttrToLasListElementBootcamp() {
     );
 }
 
-// handle scroll fixed nav menu
+// handle scroll fixed nav menu //
 function scrollEvent() {
     $(window).on('scroll',function(){
         if($(window).scrollTop() >= 100 ){
@@ -52,7 +53,7 @@ function scrollEvent() {
     });
 }
 
-// handle respoisve nav menu
+// handle respoisve nav menu //
 function moblieNavBar() {
     const navToggler = document.querySelector('.nav-toggler');
     const navMenu = document.querySelector('.site-navbar ul');
@@ -77,13 +78,13 @@ function moblieNavBar() {
     }
 }
 
-//open tabs home page
+//open tabs home page //
 function handleTabs() {
     $('.tabs-stage div').hide();
     $('.tabs-stage div:first').show();
     $('.tabs-nav li:first').addClass('tab-active');
 
-    // Change tab class and display content
+    // Change tab class and display content //
     $('.tabs-nav a').on('click', function(event){
     event.preventDefault();
     $('.tabs-nav li').removeClass('tab-active');
@@ -93,20 +94,19 @@ function handleTabs() {
     });
 
 }
-//handle Table Home Page tr Text
+//handle Table Home Page tr Text //
 function handleTableHomePageText() {
     $('.title-wrap').on('click', function(e) {
         e.preventDefault();
         
         $(this).parent().find('.hidden-text').toggleClass('open');
-       // $(this).parent().next('.hidden-text').removeClass('open');
         $('.hidden-text').next().slideToggle('slow');
         $(this).find('svg.svg-inline--fa').toggleClass('rotate');
     });
 }
  
 
-// handle Accordion trading home page tade experience section 
+// handle Accordion trading home page tade experience section //
 function handleAccordionJstrading () {
   $(".set > a").on("click", function(e) {
       e.preventDefault();
@@ -125,7 +125,7 @@ function handleAccordionJstrading () {
     }
   });
 }
- // handle footer Accordion
+ // handle footer Accordion //
 function handleFooterMobileAccordiong () {
     let width = $(window).width();
     if (width <= 769) {
@@ -138,7 +138,7 @@ function handleFooterMobileAccordiong () {
         });  
     } 
 }
-//init video about page
+//init video about page //
 function handleInitVideo() {
     var vidDefer = document.getElementsByTagName('iframe');
     for (var i=0; i<vidDefer.length; i++) {
@@ -150,10 +150,24 @@ AOS.init({
     duration: 1200,
   })
 
-//table of content
+//table of content post post-type pages //
 function openTableOfContentPost() {  
+    // $('.uagb-toc__title').append('<i class="fas fa-table"></i>');
     $('.uagb-toc__title').on('click', function(e) {
         e.preventDefault();
       $('.uagb-toc__list').slideToggle("fast");
+      $(this).toggleClass('rotate');
     });
 }
+
+// progress bar fix on botton: 0px //
+function ScrollProgressBar() {
+    $(document).on('scroll resize', function() {
+      let $d = $(document),
+          $w = $(window);
+      $('#scroll-bar').width(
+        ($d.scrollTop() / ($d.height() - $w.height()) * $d.height()) + 'px'
+      );
+    });
+}
+

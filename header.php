@@ -44,30 +44,31 @@ $logo_site = get_field('logo_site', 'option')
 				</div>
 			</div>
 		</div>
-	
+		<!-- <div class="progress-bar" id="progressBar"></div> -->
+		<div id="scroll-bar"></div>
 
 	
-  <!-- site-navbar start -->
-  <div class="navbar-area">
-    <div class="container">
-      <nav class="site-navbar">
-	  <div class="logo">
-		<a id="logo-wrapper" href="<?php echo home_url(); ?>" role="logo">
-			<img class="logo-header" src="<?php echo $logo_site['url']; ?>" alt="">
-		</a>
-	</div>
+		<!-- site-navbar start -->
+		<div class="navbar-area">
+			<div class="container">
+			<nav class="site-navbar">
+			<div class="logo">
+				<a id="logo-wrapper" href="<?php echo home_url(); ?>" role="logo">
+					<img class="logo-header" src="<?php echo $logo_site['url']; ?>" alt="">
+				</a>
+			</div>
 
-        <!-- site menu/nav -->
-		<?php header_menu(); ?>
+				<!-- site menu/nav -->
+				<?php header_menu(); ?>
 
 
-        <!-- nav-toggler for mobile version only -->
-        <button class="nav-toggler">
-          <span></span>
-        </button>
-      </nav>
-    </div>
-  </div><!-- navbar-area end -->
+				<!-- nav-toggler for mobile version only -->
+				<button class="nav-toggler">
+				<span></span>
+				</button>
+			</nav>
+			</div>
+		</div><!-- navbar-area end -->
   </header>
 
  

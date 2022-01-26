@@ -44,7 +44,7 @@ get_header();
         
         <?php endwhile; ?>
 
-        <div class="test-sidebar">
+        <div class="the5ers-sidebar-wrapper">
             <?php get_sidebar(); ?>
         </div>
 
