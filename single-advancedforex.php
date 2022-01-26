@@ -38,6 +38,10 @@
               
               <?php endwhile; ?>
 
+              <div class="comments-wrapper-single">
+                  h3commets
+              </div>
+
               <div class="the5ers_related_posts">
                   <?php the5ers_related_posts(); ?>
               </div>     
