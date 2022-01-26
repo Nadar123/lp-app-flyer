@@ -22,6 +22,7 @@
             }
 
             h1.title {
+                color: #fff;
                 padding: 16rem 0 0 0;
                 font-size: 55px;
                 line-height: 55px;
@@ -30,6 +31,18 @@
                     font-size: 22px;
                     line-height: 29px;
                 }
+            }
+        }
+    }
+    .addres-wrapper {
+        &__inner {
+            h3 {
+                color: #1a1e41;
+                font-family: 'patua one', Sans-serif;
+                font-size: 26px;
+                line-height: 36px;
+                font-weight: 700;
+                padding: 0 0 8px 0; 
             }
         }
     }
@@ -45,5 +58,132 @@
                 }
             }
         }
+
+        .wpcf7-form.init {
+            .form-group {
+                position: relative;
+                margin: 1rem 0 2rem 0;
+                width: 100%;
+
+                label {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    color: #000;
+                    width: 100%;
+                    @include media-breakpoint-down(md) {
+                        width: 100%;
+                    }
+
+                    input {
+                        background-color: transparent;
+                        border: none;
+                        width: 100%;
+                        border-bottom: 1px solid #000;
+                        color: #3d413c;
+                        font-size: 14px;
+                        line-height: 22px;
+                        font-weight: 400;
+
+                        &:active,
+                        &:focus {
+                            border-bottom: 2px solid #01d0c573;
+                        }
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                    select {
+                        background-color: transparent;
+                        border: none;
+                        position: relative;
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: 100%;
+                        border-bottom: 1px solid #000;
+
+                        @include media-breakpoint-down(md) {
+                            width: 100%;
+                            max-width: 100%;
+                            min-width: 100%;
+                        }
+
+                        &:active,
+                        &:focus {
+                            border-bottom: 2px solid #01d0c573;
+                        }
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                    textarea {
+                        border: none;
+                        background-color: transparent;
+                        width: 100%;
+                        height: 95px;
+                        border-bottom: 1px solid #000;
+                        color: #3d413c;
+                        font-size: 14px;
+                        line-height: 22px;
+                        font-weight: 400;
+
+                        @include media-breakpoint-down(md) {
+                            width: 100%
+                        }
+                    
+                        &:focus-visible {
+                            outline: none;
+                        }
+
+                        &:active,
+                        &:focus {
+                            border-bottom: 2px solid #01d0c573;
+                        }
+                    }
+                }
+
+                input[type="submit"] {
+                    margin: 2rem 0;
+                    color: #ffcd07;
+                    background: #1a1e41;
+                    font-size: 23px;
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px 0;
+                    border: none;
+                    font-weight: 700;
+                    transition: .5s ease;
+                    border-radius: 0;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+
+                    @include media-breakpoint-down(md) {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                        border: 1px solid #1a1e41;
+                    }
+                }
+                .wpcf7-form-control-wrap.menu-934 {
+                    // &::before {
+                    //     content: '\27A7';
+                    //     position: absolute;
+                    //     top: 3px;
+                    //     left: 96%;
+                    //     width: 20px;
+                    //     height: 20px;
+                    //     transform: rotate(90deg);
+                    //     font-size: 9px;
+                       
+                    // }
+                }
+                &.submit-form {
+                    min-height: 120px;
+                }
+            }
+        }
+        
     }
 }

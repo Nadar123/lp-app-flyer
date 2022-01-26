@@ -67,8 +67,8 @@ $choose_founding_table_rpt_first_body   = get_field('choose_founding_table_rpt_f
                   $row_one = $item['row_one'];
                   $row_two = $item['row_two'];
                   $row_three = $item['row_three'];
-                  $duration = $item['duration'];
-                  $test = $item['test'];
+                 // $duration = $item['duration'];
+                  // $test = $item['test'];
                 ?>
                     <tr id="col-<?php echo $key?>">
                       <td class="title-wrap dynamic-row-<?php echo $key;?>">
@@ -89,7 +89,6 @@ $choose_founding_table_rpt_first_body   = get_field('choose_founding_table_rpt_f
                         <span id="row-three" class="value">  <?php echo $row_three; ?> </span>
                       </td>
                     </tr>
-                    <tr><?php echo $test; ?></tr>
 
                    <?php endforeach; ?>
                    <?php endif; ?>

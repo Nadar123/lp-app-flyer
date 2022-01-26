@@ -2,7 +2,8 @@
 <!-- Sidebar -->
 <div class="sidebar-wrapper">
     <div class="sidebar-widgets-wrapper">
-        <?php if( is_active_sidebar( 'the5ers-sidebar' ) ){
+
+    <?php if( is_active_sidebar( 'the5ers-sidebar' ) ){
                 dynamic_sidebar( 'the5ers-sidebar' );
             }
         ?>

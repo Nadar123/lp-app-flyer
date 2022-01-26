@@ -17,3 +17,5 @@
 }
 
 add_filter( 'get_search_form', 'html5_search_form' );
+
+add_action('muplugins_loaded', 'myplugin_muload_textdomain');

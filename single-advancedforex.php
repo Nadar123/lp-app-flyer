@@ -1,7 +1,7 @@
 <?php
     get_header();
 ?>
-<div id="advanced-forex-post" class="post-wrapper">
+<div id="advanced-forex-post single" class="post-wrapper">
   <?php get_template_part('/banner/banner') ?>
     
 
