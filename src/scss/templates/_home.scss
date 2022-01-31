@@ -160,7 +160,7 @@
 
         .choose_founding_wrapper {
             background-color: #fff;
-            padding: 4rem 0;
+            padding: 1rem 0;
 
             h3.title {
                 font-family: "Courier New", Courier, monospace;
@@ -210,29 +210,43 @@
 
 ///////////////////////////
 
-
 .tabs {
     max-width: 80%;
     width: 80%;
     margin: auto;
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        max-width: 100%;
+    }
+
     ul {
         display: flex;
         justify-content: center;
         padding: 0 0 2rem 0;
+        
+        @include media-breakpoint-down(md) {
+            
+            flex-direction: column;
+        }
     }
     
       a.tab-link {
+          font-size: 14px;
         background: #fff;
         border: 1px solid #1a1e41;
         color: #1a1e41;
         display: block;
         font-weight: 600;
         padding: 10px 25px;
-        width: 150px;
+        width: 165px;
         text-align: center;
         text-decoration: none;
         margin: 1rem;
         cursor: pointer;
+
+        @include media-breakpoint-down(md) {
+            margin: 10px auto;
+        }
 
         &:hover {
           color: #333;

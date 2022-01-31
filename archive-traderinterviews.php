@@ -1,59 +1,70 @@
 <?php
-// Silence is golden.
-
 get_header();
+
+$post_type_query = array(
+    'post_type'     => 'trader interviews',
+    'post_per_page' => 2,
+    'orderby'        => 'date',
+    'order'          => 'DESC',
+    'paged'          => get_query_var( 'paged' ),
+
+);
+$the_query = new WP_Query( $post_type_query );
+
 ?>
 
-<br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<?php get_template_part('/banner/banner') ?>
+<div id="archive-advanced-forex" class="archive-wrapper">
+  <?php get_template_part('/banner/banner') ?>
 
+    <div class="main-wrapper archive-advanced-forex">
 
-<div class="main-wrapper">
-    <!--OPTION TWO -->
-    <h1 style="padding: 8rem 0 0 0;" ><?php the_archive_title(); ?></h1>
-    <h3><?php the_archive_description(); ?></h3> archive-traderinterviews
+        <?php post_type_menu() ;?>
 
+        <div class="row">
+            
+            <div class="col-8">
+                <div class="archive-advanced-forex__inner">
 
-    <?php while(have_posts()) : the_post(); ?>
-    
-    <div style="padding: 8rem 0 2rem 0;" class="content-blog">
-        <div style="padding: 1rem 0" class="small-box">
-            <span> Post by 
-                <?php the_author_posts_link(); ?> on 
-                <?php the_time('n.j.y'); ?> in 
-                <?php echo get_the_category_list(', '); ?>
-            </span>
-            <div class="tags">
-                <?php $tags = get_tags(); ?>
-                <?php foreach ( $tags as $tag ) : ?>
-                    <a href="<?php echo get_tag_link( $tag->term_id ); ?> " rel="tag">
-                        <?php echo $tag->name; ?>
-                    </a>
-                <?php endforeach; ?>
-            </div>
-        </div>
-        <h1 style="font-size: 45px;"> 
-        <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-            </a>
-        </h1>
+                    <?php if ( $the_query->have_posts() ) : ?>
+            
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                            <div class="archive-content">
+                                <a href="<?php the_permalink(); ?>">
+                                    <div class="img-wrapper">
+                                        <?php the_post_thumbnail('archive_posts'); ?>
+                                    </div>
+                                </a> 
+
+                                    <div class="text-wrappper">
+                                        <a class="title-link" href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+                                        <?php the_excerpt(); ?>
+                                        <a class="post-link" href="<?php the_permalink(); ?>"> 
+                                            <?php echo __('read more', 'the5ers');  ?> 
+                                            <sapn class="arrow">&#8658; </sapn>
+                                        </a> 
+                                    </div>
+                            </div>
+                        <?php endwhile; ?>
+                            
+                            
+                    <?php endif;?>
+
+                </div>
+                <div class="events-pagination">
+                    <?php echo paginate_links(); ?>
+                </div>
+                <?php wp_reset_postdata();?>
         
-        <hr> <br>
-        <p> 
-            <a href="<?php the_permalink(); ?>">
-                <?php the_excerpt(); ?>
-            </a>
-        </p>
-    </div>
-    
-    <?php endwhile; ?>
+            </div>
+        
+            <div class="col-4">
+                <div class="the5ers-sidebar-wrapper">
+                    <?php get_sidebar(); ?>
+                </div>
+          </div>
 
-    <div class="pag-link" style="padding: 1rem 0"> 
-        <?php echo paginate_links(); ?>
+        </div>
     </div>
-    
 </div>
-
 
 <?php get_footer();

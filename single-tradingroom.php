@@ -1,54 +1,68 @@
 <?php
     get_header();
 ?>
+<div id="tradingpsychology-post single" class="post-wrapper">
   <?php get_template_part('/banner/banner') ?>
-
-<div class="main-wrapper" style="width: 65%; margin: auto">
-    <?php while(have_posts()) : the_post(); ?>
     
-    <div style="padding: 8rem 0 2rem 0;" class="content-blog">
-        <div style="padding: 1rem 0" class="small-box">
-            <span> Post by 
-                <?php the_author_posts_link(); ?> on 
-                <?php the_time('n.j.y'); ?> in 
-                <?php echo get_the_category_list(', '); ?></span>
-        </div>
-        <h1 style="font-size: 45px;"> 
-        <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-            </a>
-        </h1>
-         
-        <hr> <br>
-        <h3>
-            <a href="<?php echo site_url('/blog')?>">Blog-Home -- 123</a>
-        </h3>
+
+  
+  <div  class="post-type-main-wrapper">
+
+      <?php get_post_types_names(); ?>
+
+      <div class="row">
+          <div class="col-8">
+              <?php while(have_posts()) : the_post(); ?>
         
-        <hr> <br>
-            <div class="img-wrap">
-                <?php the_post_thumbnail(); ?>
-            </div>
-        <hr> <br>
-        <p> 
-            <a href="<?php the_permalink(); ?>">
-                <?php the_content(); ?>
-            </a>
-        </p>
-    </div>
-    
-    <?php endwhile; ?>
+                  <div class="content-blog">
+                  
+                      <h2 class="content-blog__title"> 
+                          <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
+                      </h2>
+                      <div class="small-box">
+                          <?php get_template_part('template-parts/single/dates') ?>
+        
+                         <?php get_template_part('template-parts/single/tags') ?>
+                      </div>
+        
+                      <section class="post-content">
+        
+                          <div class="post-content__img">
+                              <?php the_post_thumbnail(); ?>
+                          </div>
+                              <div class="content-post-wrapper">
+                                  <?php the_content(); ?></p> 
+                              </div> 
+                      </section>
+                  </div>
+              
+              <?php endwhile; ?>
 
-    <div class="pag-link" style="padding: 1rem 0"> 
-        <?php echo paginate_links(); ?>
-    </div>
+              <div class="comments-wrapper-single">
+                  <!--
+                <?//php if(comments_open() || get_comments_number()) : ?>
+                    <?//php comments_template(); ?>
+                <?//php endif; ?>
+                -->
 
-    <?php 
-    // print_r(sv_related_posts());
-    // die();
-   sv_related_posts(); 
-    ?>
-    
+              </div>
+
+              <div class="the5ers_related_posts">
+                  <?php the5ers_related_posts(); ?>
+              </div>     
+          </div>
+
+
+          <div class="col-4">
+              <div class="the5ers-sidebar-wrapper">
+                  <?php get_sidebar(); ?>
+              </div>
+          </div>
+      </div>
+
+    </div>
 </div>
+
 
 
 <?php get_footer();

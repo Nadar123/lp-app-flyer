@@ -3,6 +3,22 @@
     "title": "Banners",
     "fields": [
         {
+            "key": "field_61f6371f57951",
+            "label": "Main Banner",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_61e53e684f047",
             "label": "Banner Background",
             "name": "the5ers_banner",
@@ -123,6 +139,20 @@
                 "operator": "==",
                 "value": "post"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "advancedforex"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "view\/evaluation-plans.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -134,5 +164,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1642926438
+    "modified": 1643525940
 }

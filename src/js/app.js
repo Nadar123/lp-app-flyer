@@ -22,7 +22,7 @@ jQuery(window).on('load', function($) {
     appendAttrToLasListElementBootcamp();
     openTableOfContentPost();
     ScrollProgressBar();
-   
+    handleTabeCol();
 
 });
 
@@ -84,7 +84,6 @@ function handleTabs() {
     $('.tabs-stage div:first').show();
     $('.tabs-nav li:first').addClass('tab-active');
 
-    // Change tab class and display content //
     $('.tabs-nav a').on('click', function(event){
     event.preventDefault();
     $('.tabs-nav li').removeClass('tab-active');
@@ -96,15 +95,20 @@ function handleTabs() {
 }
 //handle Table Home Page tr Text //
 function handleTableHomePageText() {
-    $('.title-wrap').on('click', function(e) {
+    $('.showMore.tbl_h').on('click', function(e) {
         e.preventDefault();
-        
-        $(this).parent().find('.hidden-text').toggleClass('open');
-        $('.hidden-text').next().slideToggle('slow');
-        $(this).find('svg.svg-inline--fa').toggleClass('rotate');
+       $(this).next().toggleClass('open');
+        $(this).find('svg.svg-inline--fa.fa-angle-double-right').toggleClass('rotate');
     });
 }
- 
+// Handle last col table
+function handleTabeCol() {
+    $('.title-wrap').on('click', function(e) {
+        e.preventDefault();
+       $('.hidden-col').toggleClass('active');
+        $(this).find('svg.svg-inline--fa.fa-angle-double-right').toggleClass('rotate');
+    });
+}
 
 // handle Accordion trading home page tade experience section //
 function handleAccordionJstrading () {

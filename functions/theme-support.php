@@ -11,7 +11,7 @@ if( function_exists('add_theme_support') ) {
     add_image_size('medium', 450, 200, true);
     add_image_size('small', 250, '', true);
     add_image_size('recent_posts', 100, 44, true);
-
+    add_image_size('archive_posts', 450, 202, true);
 
     //Theme Support for yoast
     add_theme_support('title-tag');

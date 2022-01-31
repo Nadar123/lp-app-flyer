@@ -1,6 +1,6 @@
 <?php 
-$the5ers_banner    = get_field('the5ers_banner');
-$text_under_title  = get_field('text_under_title');
+$the5ers_banner    = get_field('the5ers_banner', 'option');
+$text_under_title  = get_field('text_under_title', 'option');
 ?>
 
 <div class="page-wrapper__banner" style="background-image:url(<?php echo $the5ers_banner['url']?>)">

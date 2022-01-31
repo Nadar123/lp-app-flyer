@@ -7,7 +7,9 @@ function register_theme_menus() {
    register_nav_menus(array(
      'header-menu'      => __('Header Menu', 'the5ers'), // Main Navigation
      'footer-menu'      => __('Footer Menu', 'the5ers'),
-	 'social_icon_menu' => __('Social Menu', 'the5ers')
+	 'social_icon_menu' => __('Social Menu', 'the5ers'),
+	 'post-type-menu'   => __('Post type Menu', 'the5ers'),
+
    ));
 }
 
@@ -32,6 +34,7 @@ function header_menu() {
 		)
 	);
 }
+// social menu
 function social_icon_menu() {
 	wp_nav_menu(
 		array(
@@ -41,5 +44,16 @@ function social_icon_menu() {
 		)
 	);
 }
+//post type menu
+function post_type_menu() {
+	wp_nav_menu(
+		array(
+			'theme_location'  => 'post-type-menu',
+			'menu_class'      => 'post-type_class',
+			'container'       => ''
+		)
+	);
+}
+
 add_action('init', 'register_theme_menus');
   // add_action('after_setup_theme', 'fivers_features');
