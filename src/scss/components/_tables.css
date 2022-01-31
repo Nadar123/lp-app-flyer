@@ -1,164 +1,21 @@
-.tabs-stage {
-  position: relative;
-  width: 100%;
-}
-
-.tabs-stage table.founding-table-option {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.tabs-stage table.founding-table-option thead {
-  background-color: #1a1e41;
-  padding: 10px;
-  margin: 10px;
-}
-
-.tabs-stage table.founding-table-option thead th {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 26px;
-  font-weight: 700;
-  color: #ffcd07;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 16px;
-}
-
-.tabs-stage table.founding-table-option thead th:nth-child(1) {
-  width: 30%;
-}
-
-.tabs-stage table.founding-table-option thead th#head2 {
-  position: relative;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-}
-
-.tabs-stage table.founding-table-option tbody tr .icon-title-wrapper {
-  font-weight: bold;
-}
-
-.tabs-stage table.founding-table-option tbody tr td {
-  font-size: 16px;
-  font-weight: 400;
-  color: #000;
-  text-align: center;
-  padding: 16px;
-}
-
-.tabs-stage table.founding-table-option tbody tr td:nth-child(1) {
-  text-align: left;
-  width: 30%;
-  cursor: pointer;
-}
-
-.tabs-stage table.founding-table-option tbody tr td:nth-child(1) svg.svg-inline--fa {
-  color: #01D0C5;
-  transform: rotate(0deg);
-}
-
-.tabs-stage table.founding-table-option tbody tr td:nth-child(1) svg.svg-inline--fa.rotate {
-  transform: rotate(90deg);
-}
-
-.tabs-stage table.founding-table-option tbody tr td .hidden-text {
-  display: none;
-  background: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  padding: 1rem;
-}
-
-.tabs-stage table.founding-table-option tbody tr td .hidden-text.open {
-  display: block;
-}
-
-.tabs-stage table.founding-table-option tbody tr td .title-wrap {
-  position: relative;
-}
-
-.tabs-stage table.founding-table-option tbody tr:nth-child(1) {
-  color: #1a1e41;
-  padding: 10px 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.tabs-stage table.founding-table-option tbody tr:nth-child(1):nth-child(1) .icon-title-wrapper {
+.text-me {
   display: none;
 }
 
-.tabs-stage table.founding-table-option tbody tr:nth-child(1):nth-child(2) {
+.text-me.open {
+  background-color: #e3e2e2;
+  display: table-row;
+  padding: 1rem 0;
+}
+
+.text-me.open p {
+  padding: 1rem 0;
+}
+
+.hidden-col {
   display: none;
 }
 
-.tabs-stage table.founding-table-option tbody tr:nth-child(1):nth-child(2) .icon-title-wrapper svg {
-  display: none;
-}
-
-.tabs-stage table.founding-table-option tbody tr:nth-child(2) .title-wrap .svg {
-  display: none;
-}
-
-.tabs-stage table.founding-table-option tbody tr:nth-child(8) {
-  font-weight: bold;
-  font-size: 24px;
-  color: blue;
-}
-
-.tabs-stage table.founding-table-option tbody tr:hover {
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-}
-
-.tabs-stage table.founding-table-option tbody #col-1 .title-wrap.dynamic-row-1 svg.svg-inline--fa {
-  display: none;
-}
-
-.tabs-stage table.founding-table-option tbody #col-11 .row-one span#row-one {
-  border: 1px solid #000;
-  border: 1px solid #000;
-  color: #fff;
-  background-color: #1a1e41;
-  padding: 8px 20px;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.tabs-stage table.founding-table-option tbody #col-11 .row-one span#row-one:hover {
-  background-color: transparent;
-  color: #1a1e41;
-}
-
-.tabs-stage table.founding-table-option tbody #col-11 .row-two span#row-two {
-  border: 1px solid #000;
-  color: #fff;
-  background-color: #1a1e41;
-  padding: 8px 20px;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.tabs-stage table.founding-table-option tbody #col-11 .row-two span#row-two:hover {
-  background-color: transparent;
-  color: #1a1e41;
-}
-
-.tabs-stage table.founding-table-option tbody #col-11 .row-three span#row-three {
-  border: 1px solid #000;
-  color: #fff;
-  background-color: #1a1e41;
-  padding: 8px 20px;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.tabs-stage table.founding-table-option tbody #col-11 .row-three span#row-three:hover {
-  background-color: transparent;
-  color: #1a1e41;
-}
-
-#box5 {
-  display: none;
+.hidden-col.active {
+  display: table-row;
 }

@@ -23,6 +23,8 @@ jQuery(window).on('load', function($) {
     openTableOfContentPost();
     ScrollProgressBar();
     handleTabeCol();
+    handleEvaluationTabs();
+    handleEvaluationInnerTabs();
 
 });
 
@@ -175,3 +177,19 @@ function ScrollProgressBar() {
     });
 }
 
+///////////////////////////////////
+function handleEvaluationTabs() {
+    jQuery(".wrapper .tab").on('click' ,function(e) {
+        e.preventDefault();
+        jQuery(".wrapper .tab").removeClass("active").eq(jQuery(this).index()).addClass("active");
+        jQuery(".tab_item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+}
+
+function handleEvaluationInnerTabs() {
+    $(".inner-wrapper .inner-tabs").on('click' ,function(e) {
+        e.preventDefault();
+        $(".inner-wrapper .inner-tabs").removeClass("open").eq($(this).index()).addClass("open");
+        $(".tab-item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("open");
+}
