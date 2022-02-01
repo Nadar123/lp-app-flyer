@@ -177,25 +177,7 @@ function ScrollProgressBar() {
 
 
 ////
-// function tessst() {
-//     $('.tab').on('click', function(evt) {
-//         evt.preventDefault();
-//         $(this).toggleClass('active');
-//         var sel = this.getAttribute('data-toggle-target');
-//         $('.tab-content').removeClass('active').filter(sel).addClass('active');
-//     });
-// }
-// function trylol (){
-//     $('.tab-link').on('click', function() {
-        
-//         var tabID = $(this).attr('data-tab');
-        
-//         $(this).addClass('active').siblings().removeClass('active');
-        
-//         $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
-//     });
 
-// }
 const panels = document.querySelectorAll('.panel')
 const activeClass = document.querySelector('.panel:nth-child(1)');
 
@@ -216,3 +198,4 @@ function removeActiveClasses() {
 
     })
 }
+///

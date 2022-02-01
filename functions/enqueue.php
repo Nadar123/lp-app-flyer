@@ -34,3 +34,24 @@ add_action( 'wp_enqueue_scripts', 'loadCssJs', 1001 );
 
   }
   add_action( 'wp_enqueue_scripts', 'font_css', 1001 );
+
+  function isotope_assets() {
+    if ( is_page_template('page-templates/blog-template.php') ) {
+
+        wp_enqueue_script(
+            'isotope', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js');
+
+        wp_enqueue_script(
+            'images-loaded','https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js',array('isotope'),'1.0.1', true );
+
+        wp_enqueue_script(
+            'isotope-init',
+            get_stylesheet_directory_uri() . '/js/isotope-init.js',
+            array('images-loaded'),
+            '1.0.1',
+            true
+        );
+
+    }
+}
+add_action('wp_enqueue_scripts', 'isotope_assets');

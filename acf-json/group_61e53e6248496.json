@@ -160,6 +160,13 @@
                 "operator": "==",
                 "value": "view\/trading-growth-program.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "view\/funded-trader.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -171,5 +178,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643638492
+    "modified": 1643718991
 }

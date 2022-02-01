@@ -1,15 +1,10 @@
-// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// out: ../../build/css/style.css, compress: false, sourceMap: true, autoprefixer: last 5 versions, groupmedia: true
+
 @import "~bootstrap/scss/bootstrap";
 @import '~normalize.css/normalize.css';
-// @import '~@fortawesome/fontawesome-free/scss/fontawesome';
-// @import '~@fortawesome/fontawesome-free/scss/regular';
-// @import '~@fortawesome/fontawesome-free/scss/solid';
-// @import '~@fortawesome/fontawesome-free/scss/brands'; 
-
-// @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap');
-//@import '~font-awesome/css/font-awesome.css';
 
 @import './colors';
+
 /*T e m p l a t e s */
 @import './templates/home';
 @import './templates/about';
@@ -23,6 +18,7 @@
 @import './templates/archivesPages.scss';
 @import './templates/evaluation-plans';
 @import './templates/trading-growth';
+// @import './templates/funded-trader';
 
 
 /*C o m p o n e n t s */
@@ -39,9 +35,10 @@
 // }
 /* Preferred box-sizing value */
 *,
-*::before,
+*::before
 *::after {
     box-sizing: border-box;
+
 }
 /* Remove list styles (bullets/numbers) */
 
