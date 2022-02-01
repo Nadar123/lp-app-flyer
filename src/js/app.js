@@ -23,9 +23,8 @@ jQuery(window).on('load', function($) {
     openTableOfContentPost();
     ScrollProgressBar();
     handleTabeCol();
-    handleEvaluationTabs();
-    handleEvaluationInnerTabs();
-
+   // tessst();
+   // trylol();
 });
 
 //append a href to last li element of bootcamp list php loop //
@@ -93,7 +92,6 @@ function handleTabs() {
     $('.tabs-stage div').hide();
     $($(this).attr('href')).show();
     });
-
 }
 //handle Table Home Page tr Text //
 function handleTableHomePageText() {
@@ -177,19 +175,44 @@ function ScrollProgressBar() {
     });
 }
 
-///////////////////////////////////
-function handleEvaluationTabs() {
-    jQuery(".wrapper .tab").on('click' ,function(e) {
-        e.preventDefault();
-        jQuery(".wrapper .tab").removeClass("active").eq(jQuery(this).index()).addClass("active");
-        jQuery(".tab_item").hide().eq($(this).index()).fadeIn()
-    }).eq(0).addClass("active");
-}
 
-function handleEvaluationInnerTabs() {
-    $(".inner-wrapper .inner-tabs").on('click' ,function(e) {
-        e.preventDefault();
-        $(".inner-wrapper .inner-tabs").removeClass("open").eq($(this).index()).addClass("open");
-        $(".tab-item").hide().eq($(this).index()).fadeIn()
-    }).eq(0).addClass("open");
+////
+// function tessst() {
+//     $('.tab').on('click', function(evt) {
+//         evt.preventDefault();
+//         $(this).toggleClass('active');
+//         var sel = this.getAttribute('data-toggle-target');
+//         $('.tab-content').removeClass('active').filter(sel).addClass('active');
+//     });
+// }
+// function trylol (){
+//     $('.tab-link').on('click', function() {
+        
+//         var tabID = $(this).attr('data-tab');
+        
+//         $(this).addClass('active').siblings().removeClass('active');
+        
+//         $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
+//     });
+
+// }
+const panels = document.querySelectorAll('.panel')
+const activeClass = document.querySelector('.panel:nth-child(1)');
+
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')        
+        panel.classList.add('active-0')
+
+
+    })
+})
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+        panel.classList.remove('active-0')
+
+    })
 }

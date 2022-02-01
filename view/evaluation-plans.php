@@ -11,7 +11,7 @@
 
     <?php get_template_part('template-parts/evaluation-plans/about-programs');?>
 
-    <?//php get_template_part('template-parts/evaluation-plans/growth-schedule');?>
+    <?php get_template_part('template-parts/globals/growth-schedule-taps');?>
 
     <section class="reviews-wrapper">
     <!-- TrustBox widget - Grid -->

@@ -153,16 +153,23 @@
                 "operator": "==",
                 "value": "view\/evaluation-plans.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "view\/trading-growth-program.php"
+            }
         ]
     ],
     "menu_order": 0,
     "position": "acf_after_title",
     "style": "default",
-    "label_placement": "left",
+    "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643525940
+    "modified": 1643638492
 }

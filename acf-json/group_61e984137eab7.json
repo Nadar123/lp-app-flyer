@@ -98,13 +98,6 @@
     "location": [
         [
             {
-                "param": "options_page",
-                "operator": "==",
-                "value": "acf-options"
-            }
-        ],
-        [
-            {
                 "param": "page_template",
                 "operator": "==",
                 "value": "view\/bootcamp.php"
@@ -120,5 +113,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1642694343
+    "modified": 1643647518
 }

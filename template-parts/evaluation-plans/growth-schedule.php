@@ -15,29 +15,14 @@ $growth_schedule_rpt      = get_field('growth_schedule_rpt');
                     $growth_schedule_text_btn   = $item['growth_schedule_text_btn'];   
                 ?>
                 
-                    <p class="tab">  <?php echo $growth_schedule_text_btn;?></p>
+                    <p class="tab-link tab">  <?php echo $growth_schedule_text_btn;?></p>
         
                 <?php endforeach; ?>
 
             <?php endif; ?>
-        </div>
-       
-        <div class="tab_content">
-        <div class="tab_item">Содержимое 1</div>
-        <div class="tab_item">Содержимое 2</div>
-        <div class="tab_item">Содержимое 3</div>
-    </div>
+     
     </div>
 
 </section>
-
-<div class="wrapper">
-    <div class="tabs">
-        <span class="tab">Вкладка 1</span>
-        <span class="tab">Вкладка 2</span>
-        <span class="tab">Вкладка 3</span>        
-    </div>
-  
-</div>
 
 
