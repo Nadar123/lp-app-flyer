@@ -5,8 +5,7 @@
         background-size: cover;
         background-position: center, center;
         width: 100%;
-        height: 55vh;
-
+        
         @include media-breakpoint-down(md) {
             padding: 0;
             height: 32vh;
@@ -22,7 +21,7 @@
             }
 
             h1.title {
-                padding: 16rem 0 0 0;
+                padding: 16rem 0 2rem 0;
                 font-size: 55px;
                 line-height: 55px;
                 font-weight: 900;

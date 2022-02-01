@@ -1,0 +1,361 @@
+.trading-growth-program-wrapper {
+  width: 65%;
+  margin: auto;
+  padding: 4rem 0;
+}
+
+.trading-growth-program-wrapper .video-section {
+  text-align: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0 4rem 0;
+}
+
+.trading-growth-program-wrapper .video-section .content {
+  width: 100%;
+}
+
+.trading-growth-program-wrapper .video-section .content h2.title {
+  color: #1a1e41;
+  font-family: 'patua one',Sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 800;
+  padding: 0 0 2rem 0;
+  text-align: center;
+}
+
+.trading-growth-program-wrapper .video-section .content h3.sub {
+  text-align: center;
+  color: #1a1e41;
+  font-family: 'patua one',Sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 900;
+  padding: 0 0 2rem 0;
+}
+
+.trading-growth-program-wrapper .video-section .content p {
+  text-align: center;
+  color: #1a1e41;
+  font-family: 'patua one',Sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.trading-growth-program-wrapper .video-section .embed-container {
+  padding: 3rem 0 0 0;
+  width: 100%;
+}
+
+.trading-growth-program-wrapper .video-section .embed-container iframe {
+  width: 800px;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper h3.title {
+  color: #171d40;
+  font-family: 'patua one',Sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 800;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs {
+  width: 100%;
+  max-width: 100%;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container {
+  display: flex;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel {
+  position: relative;
+  background-color: #1a1e41;
+  padding: 8px;
+  width: 10%;
+  height: 55vh;
+  padding: 0 0 3rem 0;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  -webkit-transition: all 200ms ease-in;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active {
+  flex: 3;
+  width: 100%;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active .inner-tab-wrapper {
+  width: 100%;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active table {
+  color: #fff;
+  opacity: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active table tr th {
+  display: table-cell;
+  font-weight: 800;
+  padding: 8px 0;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active table tr td {
+  padding: 8px 0;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active-0 {
+  background-color: #1a1e41;
+  flex: 3;
+  width: 100%;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active-0 .inner-tab-wrapper {
+  width: 100%;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active-0 table {
+  color: #fff;
+  opacity: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active-0 table tr th {
+  display: table-cell;
+  font-weight: 800;
+  padding: 8px 0;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .tabs .container .panel.active-0 table tr td {
+  padding: 8px 0;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper .inner-tab-wrapper {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper h4 {
+  width: 100%;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper h4 table {
+  opacity: 0;
+  width: 100%;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper h4 table tr th {
+  display: table-cell;
+  font-weight: 800;
+  padding: 8px 0;
+}
+
+.trading-growth-program-wrapper .growth-schedule-wrapper h4 table tr td {
+  padding: 8px 0;
+}
+
+.trading-growth-program-wrapper .double-trading-balance {
+  padding: 4rem 0;
+}
+
+.trading-growth-program-wrapper .double-trading-balance__inner {
+  padding: 4rem 0 0 0;
+}
+
+.trading-growth-program-wrapper .double-trading-balance__inner h3.title {
+  color: #171d40;
+  font-family: patua one,Sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 800;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  z-index: 23;
+}
+
+.trading-growth-program-wrapper .double-trading-balance__list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;
+}
+
+.trading-growth-program-wrapper .double-trading-balance__list .content-item {
+  width: 33%;
+  margin: 0 1rem;
+  background-color: #171d40;
+  padding: 8px 8px 2rem 8px;
+}
+
+.trading-growth-program-wrapper .double-trading-balance__list .content-item .img-wrapper {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.trading-growth-program-wrapper .double-trading-balance__list .content-item .img-wrapper img {
+  height: 93px;
+}
+
+.trading-growth-program-wrapper .double-trading-balance__list h3.title {
+  color: #fff;
+  font-family: 'patua one',Sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  padding: 0 0 1rem 0;
+}
+
+.trading-growth-program-wrapper .double-trading-balance__list p {
+  color: #fff;
+  text-align: center;
+  min-height: 180px;
+}
+
+.trading-growth-program-wrapper .double-trading-balance .double-trading-card-wrapper {
+  padding: 4rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.trading-growth-program-wrapper .double-trading-balance .double-trading-card-wrapper .cards-item {
+  width: 45%;
+  background-color: #01d0c5;
+  margin: 0 2rem;
+  padding: 1rem;
+}
+
+.trading-growth-program-wrapper .double-trading-balance .double-trading-card-wrapper .cards-item .img-wrapper {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.trading-growth-program-wrapper .double-trading-balance .double-trading-card-wrapper .cards-item h3.title {
+  color: #fff;
+  font-family: 'patua one',Sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  padding: 0 0 1rem 0;
+  min-height: 100px;
+}
+
+.trading-growth-program-wrapper .double-trading-balance .double-trading-card-wrapper .cards-item p {
+  color: #fff;
+  text-align: center;
+  min-height: 260px;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+  padding: 0 0 2rem 0;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading {
+  padding: 4rem 0;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .content {
+  text-align: center;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner h2 {
+  color: #1a1e41;
+  font-family: 'patua one',Sans-serif;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner h4 {
+  color: #1a1e41;
+  font-family: 'raleway',Sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 29px;
+  padding: 1rem 0 0 0;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner h3 {
+  color: #1a1e41;
+  font-family: 'raleway',Sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 29px;
+  padding: 1rem 0;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner p {
+  color: #1a1e41;
+  font-family: 'raleway',Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  padding: 0 0 3rem 0;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .cards-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .cards-item .img-wrapper {
+  width: 37px;
+  height: 36px;
+  margin: 0 10px 0 0;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .cards-item .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .cards-item p {
+  padding: 6px 0 3rem 0;
+  width: 70%;
+  margin: auto;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .inner-wrapper {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .inner-wrapper .button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .inner-wrapper .button-wrapper .btn.btn-warning {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.trading-growth-program-wrapper .earned-profit-trading__inner .inner-wrapper .button-wrapper .btn.btn-warning:hover {
+  transform: scale(1.2);
+}

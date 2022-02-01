@@ -13485,7 +13485,6 @@ textarea.form-control-lg {
   background-size: cover;
   background-position: center, center;
   width: 100%;
-  height: 55vh;
 }
 @media (max-width: 767.98px) {
   #faq-page.page-wrapper .page-wrapper__banner {
@@ -13505,7 +13504,7 @@ textarea.form-control-lg {
   }
 }
 #faq-page.page-wrapper .page-wrapper__banner__content h1.title, #faq-page.page-wrapper .page-wrapper__banner__content .title.h1 {
-  padding: 16rem 0 0 0;
+  padding: 16rem 0 2rem 0;
   font-size: 55px;
   line-height: 55px;
   font-weight: 900;
@@ -15258,6 +15257,142 @@ textarea.form-control-lg {
 }
 .trading-growth-program-wrapper .earned-profit-trading__inner .inner-wrapper .button-wrapper .btn.btn-warning:hover {
   transform: scale(1.2);
+}
+
+.funded-trade-wrapper {
+  width: 100%;
+  padding: 4rem 0;
+}
+.funded-trade-wrapper__inner {
+  width: 65%;
+  margin: auto;
+}
+.funded-trade-wrapper__inner h3.title, .funded-trade-wrapper__inner .title.h3 {
+  color: #171d40;
+  font-family: "patua one", Sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 800;
+  padding: 0 0 3rem 0;
+}
+.funded-trade-wrapper__inner .funded-trade-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.funded-trade-wrapper__inner .funded-trade-list .funded-trade-content {
+  width: 28%;
+  margin: 0 10px;
+}
+.funded-trade-wrapper__inner .funded-trade-list .funded-trade-content .image-wrapper img {
+  min-height: 110px;
+}
+.funded-trade-wrapper__inner .funded-trade-list .funded-trade-content h3, .funded-trade-wrapper__inner .funded-trade-list .funded-trade-content .h3 {
+  color: #171d40;
+  font-family: "patua one", Sans-serif;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 600;
+  padding: 0 0 1rem 0;
+}
+.funded-trade-wrapper__inner .funded-trade-list .funded-trade-content p {
+  color: #171d40;
+  font-family: "patua one", Sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 0rem 0;
+}
+.funded-trade-wrapper .button-wrapper {
+  padding: 3rem 0;
+  text-align: center;
+}
+.funded-trade-wrapper .button-wrapper .btn.btn-warning {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+.funded-trade-wrapper .button-wrapper .btn.btn-warning:hover {
+  transform: scale(1.2);
+}
+.funded-trade-wrapper .tips_for_succeeding {
+  padding: 4rem 0;
+  background-color: #1a1e41;
+}
+.funded-trade-wrapper .tips_for_succeeding__inner {
+  color: #fff;
+  width: 65%;
+  margin: auto;
+}
+.funded-trade-wrapper .tips_for_succeeding__inner h2, .funded-trade-wrapper .tips_for_succeeding__inner .h2 {
+  color: #ffcd07;
+  font-family: "patua one", Sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  padding: 0 0 2rem 0;
+}
+.funded-trade-wrapper .tips_for_succeeding__inner h3, .funded-trade-wrapper .tips_for_succeeding__inner .h3 {
+  padding: 2rem 0;
+}
+.funded-trade-wrapper .tips_for_succeeding__inner h3 b, .funded-trade-wrapper .tips_for_succeeding__inner .h3 b {
+  color: #fefefe;
+  font-family: "raleway", Sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.funded-trade-wrapper .tips_for_succeeding__inner p {
+  width: 65%;
+}
+.funded-trade-wrapper .tips_for_succeeding__inner ul {
+  padding: 1rem 0;
+  list-style: circle;
+  -webkit-padding-start: 40px !important;
+          padding-inline-start: 40px !important;
+}
+.funded-trade-wrapper .tips_for_succeeding__inner .button-wrapper {
+  padding: 5rem 0 3rem 0;
+}
+.funded-trade-wrapper .accelerate-trade {
+  padding: 4rem 0;
+}
+.funded-trade-wrapper .accelerate-trade__inner {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #01d0c5;
+  padding: 2rem 2rem 4rem 2rem;
+}
+.funded-trade-wrapper .accelerate-trade__inner h3, .funded-trade-wrapper .accelerate-trade__inner .h3 {
+  color: #171d40;
+  font-family: "patua one", Sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 800;
+  padding: 1rem 0 2rem 0;
+}
+.funded-trade-wrapper .accelerate-trade__inner p {
+  color: #171d40;
+  font-family: "raleway", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px 0 2rem 0;
+}
+.funded-trade-wrapper .choose_founding_wrapper {
+  padding: 4rem 0;
+}
+.funded-trade-wrapper .choose_founding_wrapper h3.title, .funded-trade-wrapper .choose_founding_wrapper .title.h3 {
+  text-align: center;
+  color: #171d40;
+  font-family: "patua one", Sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 800;
+  padding: 1rem 0 2rem 0;
 }
 
 /*C o m p o n e n t s */
