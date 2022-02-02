@@ -14517,6 +14517,7 @@ textarea.form-control-lg {
   font-size: 55px;
   line-height: 55px;
   font-weight: 900;
+  text-transform: capitalize;
 }
 @media (max-width: 767.98px) {
   .archive-wrapper .page-wrapper__banner__content h1.title, .archive-wrapper .page-wrapper__banner__content .title.h1 {
@@ -14623,7 +14624,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 24px;
   padding: 0 0 1rem 0;
-  min-height: 188px;
+  min-height: 208px;
 }
 .archive-wrapper .main-wrapper.archive-advanced-forex .archive-advanced-forex__inner .archive-content a.post-link {
   color: #fff;

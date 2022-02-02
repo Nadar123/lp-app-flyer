@@ -12,7 +12,7 @@
 
 <?php 
 $all_posts = array(
-        'post_type' => 'any',
+        'post_type' => 'post',
         'posts_per_page' => 5,
         'orderby'   => 'menu_order',
         'post_status' => 'publish',
