@@ -123,28 +123,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "traderinterviews"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "advancedforex"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
                 "value": "post"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "advancedforex"
             }
         ],
         [
@@ -178,5 +157,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643718991
+    "modified": 1643785597
 }

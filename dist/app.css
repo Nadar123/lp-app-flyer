@@ -13157,7 +13157,7 @@ textarea.form-control-lg {
 .post-wrapper .post-type-main-wrapper .content-blog .post-content__img img {
   width: 100%;
   max-width: 100%;
-  min-height: auto;
+  min-height: 650px;
 }
 .post-wrapper .post-type-main-wrapper .content-blog .content-post-wrapper h2, .post-wrapper .post-type-main-wrapper .content-blog .content-post-wrapper .h2 {
   font-family: "raleway", sans-serif;
@@ -13259,6 +13259,43 @@ textarea.form-control-lg {
 }
 .post-wrapper .post-type-main-wrapper ul.post-type-list-names .item:hover {
   color: #38c0bc;
+}
+.post-wrapper .post-type-main-wrapper .product-post-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post-wrapper .post-type-main-wrapper .product-post-list .inner-post-list {
+  width: 50%;
+  padding: 8px 0;
+}
+.post-wrapper .post-type-main-wrapper .product-post-list .inner-post-list .text {
+  display: flex;
+  align-items: flex-start;
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.post-wrapper .post-type-main-wrapper .product-post-list .inner-post-list .text .icon {
+  width: 10%;
+  color: #01d0c5;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 500;
+}
+.post-wrapper .post-type-main-wrapper .price-wrapper {
+  padding: 4rem 0 3rem 0;
+}
+.post-wrapper .post-type-main-wrapper .price-wrapper .price {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 800;
+}
+.post-wrapper .post-type-main-wrapper .button-wrapper .btn.btn-warning {
+  padding: 10px 35px;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 #why-us-page.page-wrapper .page-wrapper__banner {
