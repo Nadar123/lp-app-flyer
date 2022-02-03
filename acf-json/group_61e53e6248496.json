@@ -181,6 +181,13 @@
                 "operator": "==",
                 "value": "category:trading-room"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
         ]
     ],
     "menu_order": 0,
@@ -192,5 +199,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643796690
+    "modified": 1643879402
 }

@@ -27,7 +27,7 @@ function the5ers_related_posts($args = array()) {
     // query
     $related_posts = get_posts(array(
         'post__not_in' => (array)$args['post_id'],
-        'post_type' => 'any',
+        'post_type' => 'post',
         'tax_query' => array(
             array(
                 'taxonomy' => $args['taxonomy'],

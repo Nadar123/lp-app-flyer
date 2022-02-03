@@ -4,7 +4,7 @@ get_header();
 $args['paged'] = $paged;
 $post_type_query  = array(
     'post_type'     => 'advanced forex',
-    'post_per_page' => 2,
+    'post_per_page' => -1,
     'orderby'        => 'date',
     'order'          => 'DESC',
     'paged'          => get_query_var( 'paged' ),

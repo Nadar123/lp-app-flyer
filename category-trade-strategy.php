@@ -2,7 +2,7 @@
 get_header();
 
 ?>
-<div id="archive-advanced-forex" class="archive-wrapper">
+<div id="archive-advanced-forex " class="category-page archive-wrapper">
 
     <?php get_template_part('/banner/banner') ?>
 
@@ -22,12 +22,17 @@ get_header();
                     foreach($categories as $category) :
                         $args = array(
                             'post_type' => 'post',
+                            'category_name' => 'trade strategy',
+                            'post_status' => 'publish',
+                            'posts_per_page' => -1,
+                            'paged' => $paged,
+
                             'tax_query' => array(
                                 array(
-
+                                    'paged' => $paged,
                                     'taxonomy' => 'category',
                                     'field'    => 'term_id',
-                                'terms'    => $category->cat_ID,
+                                    'terms'    => $category->cat_ID,
                                     ),
                                 ),
                             );
@@ -58,7 +63,16 @@ get_header();
     
     
                     <?php endforeach; ?>
+                    <br>
+
+                    
                 </div>
+                <div class="events-pagination">
+                    <?php echo paginate_links();  wp_reset_query();?>
+                </div>
+
+                <br>
+                <?php the5ers_related_posts(); ?>
             </div>
             <div class="col-12 col-xl-4 col-md-12">
                 <div class="the5ers-sidebar-wrapper">

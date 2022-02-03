@@ -7,9 +7,8 @@
 
   
   <div  class="post-type-main-wrapper">
-
-      <?php get_post_types_names(); ?>
-
+    <?php post_type_menu() ;?>
+    
       <div class="row">
           <div class="col-8">
               <?php while(have_posts()) : the_post(); ?>

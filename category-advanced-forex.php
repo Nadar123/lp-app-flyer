@@ -16,15 +16,15 @@ get_header();
                     <?php $categories = get_categories( array(
                         'orderby'   => 'name',
                         'order'     => 'ASC',
-                        'include'   => '1'
+                        //'include'   => '1'
                         
                     ) );
                     foreach($categories as $category) :
                         $args = array(
                             'post_type' => 'post',
+
                             'tax_query' => array(
                                 array(
-
                                     'taxonomy' => 'category',
                                     'field'    => 'term_id',
                                 'terms'    => $category->cat_ID,
@@ -58,6 +58,8 @@ get_header();
     
     
                     <?php endforeach; ?>
+                    <?php wp_reset_postdata();?>
+
                 </div>
             </div>
             <div class="col-12 col-xl-4 col-md-12">

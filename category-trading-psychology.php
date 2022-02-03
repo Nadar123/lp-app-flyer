@@ -24,10 +24,10 @@ get_header();
                             'post_type' => 'post',
                             'tax_query' => array(
                                 array(
-
+                                    'post_per_page' => -1,
                                     'taxonomy' => 'category',
                                     'field'    => 'term_id',
-                                'terms'    => $category->cat_ID,
+                                    'terms'    => $category->cat_ID,
                                     ),
                                 ),
                             );
