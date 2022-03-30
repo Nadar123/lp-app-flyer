@@ -56,6 +56,7 @@
                     border-radius: 8px;
                     padding: 23px 36px;
                     color: $main;
+                    font-family: "Gilroy", sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 16px;
@@ -75,6 +76,7 @@
                     }
                 }
                 .sign-free.link-url {
+                    font-family: "Gilroy", sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 16px;
@@ -166,6 +168,7 @@
             h4 {
                 padding: 0 0 2rem 0;
                 font-size: 24px;
+                font-family: "Gilroy", sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 32px;
@@ -239,6 +242,7 @@
                     @include input;
                     cursor: pointer;
                     &::placeholder {
+                        font-family: "Gilroy", sans-serif;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;

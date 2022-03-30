@@ -1,7 +1,6 @@
 // out: ../../build/css/style.css, compress: false, sourceMap: true, autoprefixer: last 5 versions, groupmedia: true
 @import "~bootstrap/scss/bootstrap";
 @import "~normalize.css/normalize.css";
-@import "../../dist/fonts/style.css";
 @import "./colors";
 @import "./mixin.scss";
 
@@ -143,7 +142,7 @@ video {
 html,
 body {
     background-color: #fff;
-    font-family: "Gilroy", sans-serif !important;
+    font-family: "Gilroy", sans-serif;
     position: relative;
     color: #000;
     font-size: 16px;
