@@ -7,14 +7,18 @@ Laravel Mix provides a clean, fluent API for defining basic webpack build steps 
 -Documentation
 You may review the initial documentation here.
 
--License
+# License
+
 Laravel Mix is open-sourced software licensed under the MIT license.
 
--Features:
+# Features:
+
 Normalized stylesheet for cross-browser compatibility using Normalize.css version 3 (IE8+)
+
 Easy to customize
 
--Dev Dependencies:
+# Dev Dependencies:
+
 bootstrap,
 
 cross-env,
@@ -31,21 +35,24 @@ sass,
 
 sass-loader,
 
--Dependencies:
+# Dependencies:
+
 popperjs/core,
 types/isotope-layout,
 isotope-layout,
 normalize.css,
 popper.js
 
--Installation:
+# Installation:
+
 cd wp-content/themes/AF Assignment
 
 npm install
 npm run watch
 
--Assets:
+#Assets:
 src/js
+
 src/sass
 
 # Build your assets for production using
