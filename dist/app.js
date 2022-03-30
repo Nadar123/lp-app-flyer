@@ -68,18 +68,29 @@ function handleFormSubmit() {
     var lastNameValue = lastName.value.trim();
     var emailValue = email.value.trim();
     var companyOptionValue = companyOption.value;
+    /**
+     * validate first name
+     */
 
     if (firstNameValue === "") {
       setError(firstName, "First name is required");
     } else {
       setSuccess(firstName);
     }
+    /**
+     * validate last name
+     */
+
 
     if (lastNameValue === "") {
       setError(lastName, "Last name is required");
     } else {
       setSuccess(lastName);
     }
+    /**
+     * validate email
+     */
+
 
     if (emailValue === "") {
       setError(email, "Email is required");
@@ -88,6 +99,10 @@ function handleFormSubmit() {
     } else {
       setSuccess(email);
     }
+    /**
+     * validate select options
+     */
+
 
     if (companyOptionValue === "") {
       setError(companyOption, "Select an option");
