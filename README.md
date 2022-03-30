@@ -9,7 +9,7 @@ You may review the initial documentation here.
 
 # License
 
-Laravel Mix is open-sourced software licensed under the MIT license.
+Laravel Mix is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT" rel="nofollow">MIT license</a>.
 
 # Features:
 
