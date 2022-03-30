@@ -35,9 +35,13 @@ sass-loader,
 # Dependencies:
 
 popperjs/core,
+
 types/isotope-layout,
+
 isotope-layout,
+
 normalize.css,
+
 popper.js
 
 # Installation:
