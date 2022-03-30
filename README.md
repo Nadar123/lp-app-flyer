@@ -61,5 +61,3 @@ src/sass
 # Build your assets for production using
 
 npm run production
-
-# Read more about Laravel Mix on their official documentation.
