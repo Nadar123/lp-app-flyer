@@ -1,8 +1,9 @@
 
-<!doctype html>
 <?php 
-$logo_site = get_field('logo_site', 'option')
+$lp_main_logo = get_field('lp_main_logo', 'option');
 ?>
+<!doctype html>
+
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
@@ -28,47 +29,16 @@ $logo_site = get_field('logo_site', 'option')
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
 
-	<header class="header clear" role="banner">
-		<div class="main-nav-wrapper">
-			<div class="row-wrapper">
-				<div class="logo">
-					<a id="logo-wrapper" href="<?php echo home_url(); ?>" role="logo">
-						<img class="logo-header" src="<?php echo $logo_site['url']; ?>" alt="">
+	<header class="header" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<a class="logo-wrapper" href="<?php echo home_url(); ?>" role="logo">
+						<img class="logo" src="<?php echo $lp_main_logo['url'];?>" alt="">
 					</a>
-				</div>
-
-				<div class="menu-wrapper desktop_only">
-					<nav class="nav" role="navigation">
-						<?php header_menu(); ?>
-					</nav>
 				</div>
 			</div>
 		</div>
-		<!-- <div class="progress-bar" id="progressBar"></div> -->
-		<div id="scroll-bar"></div>
-
-	
-		<!-- site-navbar start -->
-		<div class="navbar-area">
-			<div class="container">
-			<nav class="site-navbar">
-			<div class="logo">
-				<a id="logo-wrapper" href="<?php echo home_url(); ?>" role="logo">
-					<img class="logo-header" src="<?php echo $logo_site['url']; ?>" alt="">
-				</a>
-			</div>
-
-				<!-- site menu/nav -->
-				<?php header_menu(); ?>
-
-
-				<!-- nav-toggler for mobile version only -->
-				<button class="nav-toggler">
-				<span></span>
-				</button>
-			</nav>
-			</div>
-		</div><!-- navbar-area end -->
   </header>
 
  

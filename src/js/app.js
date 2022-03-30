@@ -1,201 +1,91 @@
-import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import AOS from '../../node_modules/aos/dist/aos';
-import '../../node_modules/aos/dist/aos.css';
-
-window.$ = window.jQuery = require('jquery');
-window.Popper = require('popper.js');
-require('bootstrap');
-
-jQuery(window).on('load', function($) {
-    handleInitVideo();
-    library.add(fas, far, fab); 
-    dom.i2svg();
-    moblieNavBar();
-    scrollEvent();
-    handleTabs();
-    handleTableHomePageText();
-    handleAccordionJstrading(); 
-    handleFooterMobileAccordiong(); 
-    appendAttrToLasListElementBootcamp();
-    openTableOfContentPost();
-    ScrollProgressBar();
-    handleTabeCol();
-   // tessst();
-   // trylol();
+jQuery(window).on("load", function($) {
+    handleFormSubmit();
 });
 
-//append a href to last li element of bootcamp list php loop //
-function appendAttrToLasListElementBootcamp() {
-    const myUrl = 'https://google.com';
-    const innerText = 'Click here for the programs terms & conditions';
-    jQuery("#bootcamp-list li:last-child")
-    .append(
-        `<li class="item">
-            <span class="icon"> &#10003; </span>
-            <a class="js-link" href="${myUrl}">
-                ${innerText}
-            </a>
-        </li>`
-    );
-}
-
-// handle scroll fixed nav menu //
-function scrollEvent() {
-    $(window).on('scroll',function(){
-        if($(window).scrollTop() >= 100 ){
-            $('.header').addClass('active');
-        }
-        else{
-            $('.header').removeClass('active');
+/**
+ * Handle form validation
+ */
+function handleFormSubmit() {
+    const form = document.getElementById("lp_form");
+    const firstName = document.getElementById("first_name");
+    const lastName = document.getElementById("last_name");
+    const email = document.getElementById("email");
+    const companyOption = document.getElementById("company_option");
+    let formValidation = true;
+    /**
+     * Handle form submit event
+     */
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        validateInputs();
+        if (formValidation) {
+            alert("Successful form submission");
         }
     });
-}
 
-// handle respoisve nav menu //
-function moblieNavBar() {
-    const navToggler = document.querySelector('.nav-toggler');
-    const navMenu = document.querySelector('.site-navbar ul');
-    const navLinks = document.querySelectorAll('.site-navbar a');
+    /**
+     * Handle set error
+     */
+    const setError = (element, message) => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector(".error");
 
-    allEventListners();
+        errorDisplay.innerText = message;
+        inputControl.classList.add("error");
+        inputControl.classList.remove("success");
+        formValidation = false;
+    };
+    /**
+     * Handle set success
+     */
+    const setSuccess = (element) => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector(".error");
 
-    function allEventListners() {
-        navToggler.addEventListener('click', togglerClick);
-        navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
-    }
+        errorDisplay.innerText = "";
+        inputControl.classList.add("success");
+        inputControl.classList.remove("error");
+    };
+    /**
+     * Email validation
+     */
+    const isValidEmail = (email) => {
+        const re =
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    };
 
-    function togglerClick() {
-        navToggler.classList.toggle('toggler-open');
-        navMenu.classList.toggle('open');
-    }
+    const validateInputs = () => {
+        formValidation = true;
+        const firstNameValue = firstName.value.trim();
+        const lastNameValue = lastName.value.trim();
+        const emailValue = email.value.trim();
+        const companyOptionValue = companyOption.value;
 
-    function navLinkClick() {
-        if(navMenu.classList.contains('open')) {
-            navToggler.click();
+        if (firstNameValue === "") {
+            setError(firstName, "First name is required");
+        } else {
+            setSuccess(firstName);
         }
-    }
+
+        if (lastNameValue === "") {
+            setError(lastName, "Last name is required");
+        } else {
+            setSuccess(lastName);
+        }
+
+        if (emailValue === "") {
+            setError(email, "Email is required");
+        } else if (!isValidEmail(emailValue)) {
+            setError(email, "Provide a valid email address");
+        } else {
+            setSuccess(email);
+        }
+
+        if (companyOptionValue === "") {
+            setError(companyOption, "Select an option");
+        } else {
+            setSuccess(companyOption);
+        }
+    };
 }
-
-//open tabs home page //
-function handleTabs() {
-    $('.tabs-stage div').hide();
-    $('.tabs-stage div:first').show();
-    $('.tabs-nav li:first').addClass('tab-active');
-
-    $('.tabs-nav a').on('click', function(event){
-    event.preventDefault();
-    $('.tabs-nav li').removeClass('tab-active');
-    $(this).parent().addClass('tab-active');
-    $('.tabs-stage div').hide();
-    $($(this).attr('href')).show();
-    });
-}
-//handle Table Home Page tr Text //
-function handleTableHomePageText() {
-    $('.showMore.tbl_h').on('click', function(e) {
-        e.preventDefault();
-       $(this).next().toggleClass('open');
-        $(this).find('svg.svg-inline--fa.fa-angle-double-right').toggleClass('rotate');
-    });
-}
-// Handle last col table
-function handleTabeCol() {
-    $('.title-wrap').on('click', function(e) {
-        e.preventDefault();
-       $('.hidden-col').toggleClass('active');
-        $(this).find('svg.svg-inline--fa.fa-angle-double-right').toggleClass('rotate');
-    });
-}
-
-// handle Accordion trading home page tade experience section //
-function handleAccordionJstrading () {
-  $(".set > a").on("click", function(e) {
-      e.preventDefault();
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this).siblings(".content").slideUp(200);
-      $(".set > a .fas").removeClass("fa-minus").addClass("fa-plus");
-
-    } else {
-      $(".set > a .fas").removeClass("fa-minus").addClass("fa-plus");
-      $(this).find(".fas").removeClass("fa-plus");
-      $(".set > a").removeClass("active");
-      $(this).addClass("active");
-      $(".content").slideUp(200);
-      $(this).siblings(".content").slideDown(200);
-    }
-  });
-}
- // handle footer Accordion //
-function handleFooterMobileAccordiong () {
-    let width = $(window).width();
-    if (width <= 769) {
-        jQuery('.footer-wrapper .menu-item-has-children').on('click', function (e) {
-             e.preventDefault();
-             e.stopPropagation();
-             
-            jQuery(this).find('.sub-menu').slideToggle("slow");
-     
-        });  
-    } 
-}
-//init video about page //
-function handleInitVideo() {
-    var vidDefer = document.getElementsByTagName('iframe');
-    for (var i=0; i<vidDefer.length; i++) {
-        if(vidDefer[i].getAttribute('data-src')) {
-            vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-        } } }
-//AOS animate 
-AOS.init({
-    duration: 1200,
-  })
-
-//table of content post post-type pages //
-function openTableOfContentPost() {  
-    // $('.uagb-toc__title').append('<i class="fas fa-table"></i>');
-    $('.uagb-toc__title').on('click', function(e) {
-        e.preventDefault();
-      $('.uagb-toc__list').slideToggle("fast");
-      $(this).toggleClass('rotate');
-    });
-}
-
-// progress bar fix on botton: 0px //
-function ScrollProgressBar() {
-    $(document).on('scroll resize', function() {
-      let $d = $(document),
-          $w = $(window);
-      $('#scroll-bar').width(
-        ($d.scrollTop() / ($d.height() - $w.height()) * $d.height()) + 'px'
-      );
-    });
-}
-
-
-////
-
-const panels = document.querySelectorAll('.panel')
-const activeClass = document.querySelector('.panel:nth-child(1)');
-
-panels.forEach(panel => {
-    panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.add('active')        
-        panel.classList.add('active-0')
-
-
-    })
-})
-
-function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-        panel.classList.remove('active-0')
-
-    })
-}
-///

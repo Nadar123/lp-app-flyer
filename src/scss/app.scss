@@ -1,73 +1,48 @@
 // out: ../../build/css/style.css, compress: false, sourceMap: true, autoprefixer: last 5 versions, groupmedia: true
-
 @import "~bootstrap/scss/bootstrap";
-@import '~normalize.css/normalize.css';
+@import "~normalize.css/normalize.css";
+@import "../../dist/fonts/style.css";
+@import "./colors";
+@import "./mixin.scss";
 
-@import './colors';
+/* P a r t s */
+
+@import "./components/header.scss";
 
 /*T e m p l a t e s */
-@import './templates/home';
-@import './templates/about';
-@import './templates/contact';
-@import './templates/post.scss';
-@import './templates/why-us.scss';
-@import './templates/faq.scss';
-@import './templates/timeLine.scss';
-@import './templates/terms-conditions.scss';
-@import './templates/bootcamp.scss';
-@import './templates/archivesPages.scss';
-@import './templates/evaluation-plans';
-@import './templates/trading-growth';
-@import './templates/funded-trader';
-@import './templates/category.scss';
 
+@import "./templates/home";
 
-/*C o m p o n e n t s */
-@import './components/header';
-@import './components/footer';
-@import './components/tables';
-@import './components/table-of-content';
-@import './components/sidebar';
+/* R E S E T */
 
-
-// *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
-//     all: unset;
-//     display: revert;
-// }
-/* Preferred box-sizing value */
 *,
-*::before
-*::after {
+*::before *::after {
     box-sizing: border-box;
-
 }
-/* Remove list styles (bullets/numbers) */
 
 ol,
 ul,
 menu {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
-/* For images to not be able to exceed their container */
+
 img {
     max-width: 100%;
 }
-/* removes spacing between cells in tables */
+
 table {
     border-collapse: collapse;
 }
-/* revert the 'white-space' property for textarea elements on Safari */
 
 textarea {
     white-space: revert;
 }
-/* revert for bug in Chromium browsers
-   - fix for the content editable attribute will work properly. */
 
 :where([contenteditable]) {
     -moz-user-modify: read-write;
@@ -75,6 +50,7 @@ textarea {
     overflow-wrap: break-word;
     -webkit-line-break: after-white-space;
 }
+
 html,
 body,
 div,
@@ -166,17 +142,14 @@ video {
 
 html,
 body {
-    font-family: 'Raleway', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     background-color: #fff;
-}
-
-body {
+    font-family: "Gilroy", sans-serif !important;
     position: relative;
     color: #000;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
 }
-/************* E N D *****************/
+
+
+/************* E N D  R E S E T *****************/

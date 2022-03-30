@@ -1,0 +1,17 @@
+.header {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top: 1rem;
+    z-index: 9;
+    .logo-wrapper {
+        width: 138px;
+        min-height: 38px;
+        margin: 1rem 0;
+        img {
+            max-width: 100%;
+            min-height: 100%;
+            height: auto;
+        }
+    }
+}
