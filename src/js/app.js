@@ -1,3 +1,5 @@
+import { isValidEmail } from "./helper";
+
 jQuery(window).on("load", function($) {
     handleFormSubmit();
 });
@@ -12,6 +14,7 @@ function handleFormSubmit() {
     const email = document.getElementById("email");
     const companyOption = document.getElementById("company_option");
     let formValidation = true;
+
     /**
      * Handle form submit event
      */
@@ -45,14 +48,6 @@ function handleFormSubmit() {
         errorDisplay.innerText = "";
         inputControl.classList.add("success");
         inputControl.classList.remove("error");
-    };
-    /**
-     * Email validation
-     */
-    const isValidEmail = (email) => {
-        const re =
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
     };
 
     const validateInputs = () => {

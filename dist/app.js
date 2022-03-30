@@ -1,11 +1,15 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/app.js":
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helper */ "./src/js/helper.js");
 
 jQuery(window).on("load", function ($) {
   handleFormSubmit();
@@ -57,15 +61,6 @@ function handleFormSubmit() {
     inputControl.classList.add("success");
     inputControl.classList.remove("error");
   };
-  /**
-   * Email validation
-   */
-
-
-  var isValidEmail = function isValidEmail(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-  };
 
   var validateInputs = function validateInputs() {
     formValidation = true;
@@ -88,7 +83,7 @@ function handleFormSubmit() {
 
     if (emailValue === "") {
       setError(email, "Email is required");
-    } else if (!isValidEmail(emailValue)) {
+    } else if (!(0,_helper__WEBPACK_IMPORTED_MODULE_0__.isValidEmail)(emailValue)) {
       setError(email, "Provide a valid email address");
     } else {
       setSuccess(email);
@@ -104,13 +99,23 @@ function handleFormSubmit() {
 
 /***/ }),
 
-/***/ "./src/js/index.js":
-/*!*************************!*\
-  !*** ./src/js/index.js ***!
-  \*************************/
-/***/ (() => {
+/***/ "./src/js/helper.js":
+/*!**************************!*\
+  !*** ./src/js/helper.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-console.log("index");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "isValidEmail": () => (/* binding */ isValidEmail)
+/* harmony export */ });
+/**
+ * Email validation
+ */
+var isValidEmail = function isValidEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
 
 /***/ }),
 
@@ -120,7 +125,6 @@ console.log("index");
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -186,6 +190,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -265,7 +281,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["dist/app"], () => (__webpack_require__("./src/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["dist/app"], () => (__webpack_require__("./src/js/index.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/app"], () => (__webpack_require__("./src/scss/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

@@ -1,6 +1,6 @@
 # lp-app-flyer
 
-# wordpress theme
+# wordpress theme with Laravel Mix
 
 <a target="_blank" rel="noopener noreferrer" href="https://repository-images.githubusercontent.com/76991633/43a4fe80-025e-11eb-8b88-bf742e4412a7"><img src="https://repository-images.githubusercontent.com/76991633/43a4fe80-025e-11eb-8b88-bf742e4412a7" alt="Laravel Mix thumbnail" style="max-width: 100%;"></a>
 
