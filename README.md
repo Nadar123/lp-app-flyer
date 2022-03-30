@@ -49,6 +49,7 @@ popper.js
 cd wp-content/themes/AF Assignment
 
 npm install
+
 npm run watch
 
 # Assets:
